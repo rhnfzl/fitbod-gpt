@@ -1,10 +1,10 @@
-# FitbodGPT — Conversation Starters
+# FitbodGPT - Conversation Starters
 
 ## Starters
 
 ### 1. "Upload my Fitbod report and analyze my training"
 **Purpose:** Primary entry point. Gets users into the upload-first flow immediately.
-**Triggers:** Full analysis pipeline — format detection, data parsing, level detection, equipment inference, summary presentation.
+**Triggers:** Full analysis pipeline - format detection, data parsing, level detection, equipment inference, summary presentation.
 **Best for:** First-time users who want the full experience.
 
 ### 2. "Build me a workout plan for this week"

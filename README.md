@@ -57,6 +57,6 @@ The GPT will infer muscle groups for unknown exercises using its training knowle
 
 ## Related Projects
 
-- [fitbod-report](https://github.com/rhnfzl/fitbod-report) — Generates workout reports from Fitbod CSV exports
-- [Fitbod2HevyConverter](https://github.com/rhnfzl/Fitbod2HevyConverter) — Converts Fitbod data to Hevy format
-- [hevy-gpt](https://github.com/hevyapp/hevy-gpt) — Inspiration: Hevy's custom GPT (has API integration)
+- [fitbod-report](https://github.com/rhnfzl/fitbod-report) - Generates workout reports from Fitbod CSV exports
+- [Fitbod2HevyConverter](https://github.com/rhnfzl/Fitbod2HevyConverter) - Converts Fitbod data to Hevy format
+- [hevy-gpt](https://github.com/hevyapp/hevy-gpt) - Inspiration: Hevy's custom GPT (has API integration)

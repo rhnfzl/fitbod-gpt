@@ -1,4 +1,4 @@
-# FitbodGPT — GPT Builder Configuration
+# FitbodGPT - GPT Builder Configuration
 
 ## Basic Info
 
@@ -21,9 +21,9 @@
 
 Upload these 3 files from the `knowledge/` directory:
 
-1. **exercise-database.json** (~35KB) — 209 Fitbod exercises with muscle groups, equipment, movement patterns
-2. **training-principles.md** (~4KB) — Volume landmarks, progressive overload, splits, recovery science
-3. **report-format-guide.md** (~5KB) — Parsing instructions for all 4 report formats (GPT/JSON/YAML/MD)
+1. **exercise-database.json** (~35KB) - 209 Fitbod exercises with muscle groups, equipment, movement patterns
+2. **training-principles.md** (~4KB) - Volume landmarks, progressive overload, splits, recovery science
+3. **report-format-guide.md** (~5KB) - Parsing instructions for all 4 report formats (GPT/JSON/YAML/MD)
 
 ## Conversation Starters
 
@@ -31,7 +31,7 @@ See `conversation-starters.md` for the 4 starters with rationale.
 
 ## Actions
 
-None — Fitbod has no public API. FitbodGPT is read-only (analyze data → recommend workouts).
+None - Fitbod has no public API. FitbodGPT is read-only (analyze data → recommend workouts).
 
 ## Privacy & Safety
 

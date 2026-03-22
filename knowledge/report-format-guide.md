@@ -517,7 +517,7 @@ TRX Row
 ```
 
 When you encounter unknown exercises:
-1. **Do NOT skip them** — infer muscle groups from the exercise name using your training knowledge
+1. **Do NOT skip them** - infer muscle groups from the exercise name using your training knowledge
 2. Include them in volume and analysis calculations using your inferred classification
 3. Briefly note to the user which exercises you inferred, so they can correct if needed
 4. You can still recommend these exercises in workout plans
