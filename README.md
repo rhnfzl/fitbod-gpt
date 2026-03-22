@@ -8,13 +8,13 @@ A custom GPT inside ChatGPT that analyzes your Fitbod workout data and provides 
 Fitbod App → Export CSV → fitbod-report → GPT-optimized report → FitbodGPT → Personalized workout plan
 ```
 
-1. Export your workout data from the Fitbod app
-2. Upload the CSV to [fitbod-report](https://github.com/rhnfzl/fitbod-report) and generate a report (select "GPT" format)
-3. Copy or download the report
-4. Open FitbodGPT in ChatGPT and paste/upload the report
+1. Export your workout data from the Fitbod app (Log tab > settings > Export Workout Data)
+2. Go to the [Fitbod Report app](https://fitbod-report.streamlit.app/), upload your CSV, pick a date range, and select "GPT" format
+3. Copy the report using the copy button or download it
+4. Open [FitbodGPT in ChatGPT](https://chatgpt.com/g/g-69bfd1becff08191b3b93c1d0312fda9-fitbodgpt) and paste the report
 5. Get personalized analysis and workout recommendations
 
-Note: the `fitbod-report` app keeps GPT exports weekly for FitbodGPT, even if you use broader periods for the other export formats.
+The GPT export format stays weekly for consistent coaching. Source code for the report app: [fitbod-report on GitHub](https://github.com/rhnfzl/fitbod-report).
 
 ## Features
 
@@ -59,6 +59,7 @@ The GPT will infer muscle groups for unknown exercises using its training knowle
 
 ## Related Projects
 
-- [fitbod-report](https://github.com/rhnfzl/fitbod-report) - Generates workout reports from Fitbod CSV exports
+- [Fitbod Report](https://fitbod-report.streamlit.app/) - Web app to generate reports from Fitbod CSV exports ([GitHub](https://github.com/rhnfzl/fitbod-report))
+- [FitbodGPT on ChatGPT](https://chatgpt.com/g/g-69bfd1becff08191b3b93c1d0312fda9-fitbodgpt) - The live GPT
 - [Fitbod2HevyConverter](https://github.com/rhnfzl/Fitbod2HevyConverter) - Converts Fitbod data to Hevy format
 - [hevy-gpt](https://github.com/hevyapp/hevy-gpt) - Inspiration: Hevy's custom GPT (has API integration)
