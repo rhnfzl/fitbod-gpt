@@ -56,7 +56,7 @@ Use Code Interpreter for ALL parsing and calculations:
 2. Filter out all warmup sets (type="warmup" or is_warmup=true)
 3. Reference exercise-database.json for muscle group classification
 4. Compute: volume per muscle group/week, push:pull ratio, upper:lower ratio, exercise variety score, weight progression trends
-5. Identify imbalances by comparing to targets in training-principles.md
+5. Identify imbalances by comparing to targets in training-principles.txt
 6. Identify stalled exercises (trend <= 0% over 4+ weeks)
 
 ## IMBALANCE HANDLING
