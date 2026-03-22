@@ -1,0 +1,3617 @@
+{
+  "version": "1.0",
+  "generated": "2026-03-22",
+  "source": "Fitbod2HevyConverter EXERCISE_MAPPING (209 exercises). NOTE: This is not exhaustive. For exercises not listed here, infer muscle groups and equipment from the exercise name.",
+  "exercises": [
+    {
+      "fitbod_name": "Ab Crunch Machine",
+      "hevy_name": "Crunch (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Air Squats",
+      "hevy_name": "Squat (Bodyweight)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "squat",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Arnold Dumbbell Press",
+      "hevy_name": "Arnold Press (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "front_delts",
+        "side_delts"
+      ],
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "movement_pattern": "vertical_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Assisted Chin Up",
+      "hevy_name": "Chin Up (Assisted)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "upper_back"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Assisted Dip",
+      "hevy_name": "Triceps Dip",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "triceps",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "front_delts"
+      ],
+      "movement_pattern": "isolation_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Assisted Neutral Grip Pull Up",
+      "hevy_name": "Pull Up (Assisted)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Assisted Pull Up",
+      "hevy_name": "Pull Up (Assisted)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Assisted Wide Grip Pull Up",
+      "hevy_name": "Pull Up (Assisted)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Australian Pull Up",
+      "hevy_name": "Inverted Row",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Back Extensions",
+      "hevy_name": "Back Extension",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lower_back",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Back Squat",
+      "hevy_name": "Squat (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "squat",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Backward Arm Circle",
+      "hevy_name": "Backward Arm Circle",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "shoulders"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Barbell Bench Press",
+      "hevy_name": "Bench Press (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Barbell Curl",
+      "hevy_name": "Bicep Curl (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Barbell Hip Thrust",
+      "hevy_name": "Hip Thrust (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Barbell Incline Bench Press",
+      "hevy_name": "Incline Bench Press (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "upper_chest",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Barbell Lunge",
+      "hevy_name": "Lunge (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "lunge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Barbell Shoulder Press",
+      "hevy_name": "Overhead Press (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "front_delts",
+        "side_delts"
+      ],
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "movement_pattern": "vertical_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Barbell Shrug",
+      "hevy_name": "Shrug (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "traps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Bench Dip",
+      "hevy_name": "Bench Dip",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "triceps",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "front_delts"
+      ],
+      "movement_pattern": "isolation_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Bench T-Spine Stretch",
+      "hevy_name": "Bench T-Spine Stretch",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "upper_back",
+        "shoulders"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Bent Over Barbell Row",
+      "hevy_name": "Bent Over Row (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts",
+        "lower_back"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Bicycle Crunch",
+      "hevy_name": "Bicycle Crunch",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Bird Dog",
+      "hevy_name": "Bird Dog",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "lower_back"
+      ],
+      "secondary_muscles": [
+        "glutes"
+      ],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Bodyweight Bulgarian Split Squat",
+      "hevy_name": "Bulgarian Split Squat",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "lunge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Burpee",
+      "hevy_name": "Burpee",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "abs",
+        "front_delts"
+      ],
+      "movement_pattern": "locomotion",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Bicep Curl",
+      "hevy_name": "Bicep Curl (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Crossover Fly",
+      "hevy_name": "Cable Fly Crossovers",
+      "equipment": "cable",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Crunch",
+      "hevy_name": "Cable Crunch",
+      "equipment": "cable",
+      "primary_muscles": [
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Face Pull",
+      "hevy_name": "Face Pull",
+      "equipment": "cable",
+      "primary_muscles": [
+        "rear_delts",
+        "upper_back"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Hip Abduction",
+      "hevy_name": "Hip Abduction (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "glutes"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Hip Adduction",
+      "hevy_name": "Hip Adduction (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "adductors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Lateral Raise",
+      "hevy_name": "Lateral Raise (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "side_delts"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable One Arm Tricep Side Extension",
+      "hevy_name": "Triceps Extension (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Cable One Arm Underhand Tricep Extension",
+      "hevy_name": "Triceps Extension (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Cable Rear Delt Fly",
+      "hevy_name": "Reverse Fly (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "rear_delts"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "horizontal_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Rope Overhead Triceps Extension",
+      "hevy_name": "Triceps Rope Pushdown",
+      "equipment": "cable",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Rope Tricep Extension",
+      "hevy_name": "Triceps Rope Pushdown",
+      "equipment": "cable",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Row",
+      "hevy_name": "Seated Row (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Tricep Pushdown",
+      "hevy_name": "Triceps Pushdown",
+      "equipment": "cable",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cable Underhand Tricep Pushdown",
+      "hevy_name": "Triceps Pushdown",
+      "equipment": "cable",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Calf Press",
+      "hevy_name": "Calf Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "calves"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cat Cow",
+      "hevy_name": "Cat Cow",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lower_back",
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Chest Expansion",
+      "hevy_name": "Chest Expansion",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "chest",
+        "shoulders"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Chin Up",
+      "hevy_name": "Chin Up",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "upper_back"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Close-Grip Bench Press",
+      "hevy_name": "Bench Press - Close Grip (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "triceps",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cross Body Hammer Curls",
+      "hevy_name": "Cross Body Hammer Curl (Dumbbell)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "biceps",
+        "forearms"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Crunches",
+      "hevy_name": "Crunch",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cycling",
+      "hevy_name": "Cycling",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "hamstrings"
+      ],
+      "secondary_muscles": [
+        "calves"
+      ],
+      "movement_pattern": "locomotion",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "cardio",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Cycling - Stationary",
+      "hevy_name": "Stationary Bike",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "hamstrings"
+      ],
+      "secondary_muscles": [
+        "calves"
+      ],
+      "movement_pattern": "locomotion",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "cardio",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dead Bug",
+      "hevy_name": "Dead Bug",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dead Hang",
+      "hevy_name": "Dead Hang",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "forearms",
+        "lats"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Deadlift",
+      "hevy_name": "Deadlift (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "hamstrings",
+        "glutes",
+        "lower_back"
+      ],
+      "secondary_muscles": [
+        "traps",
+        "quads",
+        "forearms"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Deadlift to Calf Raise",
+      "hevy_name": "Deadlift (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "hamstrings",
+        "glutes",
+        "lower_back"
+      ],
+      "secondary_muscles": [
+        "traps",
+        "calves"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Decline Crunch",
+      "hevy_name": "Decline Crunch",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Decline Push Up",
+      "hevy_name": "Decline Push Up",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "upper_chest",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Decline Russian Twists",
+      "hevy_name": "Russian Twist",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "obliques",
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dip",
+      "hevy_name": "Dip",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "triceps",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "front_delts"
+      ],
+      "movement_pattern": "isolation_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Diverging Seated Row",
+      "hevy_name": "Seated Row (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Back Fly",
+      "hevy_name": "Reverse Fly (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "rear_delts"
+      ],
+      "secondary_muscles": [
+        "upper_back"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Bench Press",
+      "hevy_name": "Bench Press (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Bicep Curl",
+      "hevy_name": "Bicep Curl (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Decline Bench Press",
+      "hevy_name": "Decline Bench Press (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "lower_chest",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Fly",
+      "hevy_name": "Chest Fly (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Front Raise",
+      "hevy_name": "Front Raise (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "front_delts"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Goblet Squat",
+      "hevy_name": "Goblet Squat",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "squat",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Incline Bench Press",
+      "hevy_name": "Incline Bench Press (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "upper_chest",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Incline Fly",
+      "hevy_name": "Incline Chest Fly (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "upper_chest"
+      ],
+      "secondary_muscles": [
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Kickbacks",
+      "hevy_name": "Triceps Kickback (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Lateral Raise",
+      "hevy_name": "Lateral Raise (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "side_delts"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Lunge",
+      "hevy_name": "Lunge (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "lunge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Pullover",
+      "hevy_name": "Pullover (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "lats",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Rear Delt Raise",
+      "hevy_name": "Reverse Fly (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "rear_delts"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Romanian Deadlift",
+      "hevy_name": "Romanian Deadlift (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "hamstrings",
+        "glutes",
+        "lower_back"
+      ],
+      "secondary_muscles": [
+        "traps"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Row",
+      "hevy_name": "Dumbbell Row",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Dumbbell Shoulder Press",
+      "hevy_name": "Shoulder Press (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "front_delts",
+        "side_delts"
+      ],
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "movement_pattern": "vertical_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Shoulder Raise",
+      "hevy_name": "Lateral Raise (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "side_delts"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Shrug",
+      "hevy_name": "Shrug (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "traps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Skullcrusher",
+      "hevy_name": "Skullcrusher (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Squat",
+      "hevy_name": "Squat (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "squat",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Squat To Shoulder Press",
+      "hevy_name": "Thruster (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "front_delts",
+        "side_delts"
+      ],
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "movement_pattern": "vertical_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Superman",
+      "hevy_name": "Superman",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "lower_back",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Tricep Extension",
+      "hevy_name": "Triceps Extension (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Upright Row",
+      "hevy_name": "Upright Row (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "side_delts",
+        "traps"
+      ],
+      "secondary_muscles": [
+        "biceps"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Dumbbell Walking Lunge",
+      "hevy_name": "Lunge (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "lunge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "EZ-Bar Curl",
+      "hevy_name": "Bicep Curl (EZ Bar)",
+      "equipment": "ez_bar",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "EZ-Bar Overhead Tricep Extension",
+      "hevy_name": "Triceps Extension (Barbell)",
+      "equipment": "ez_bar",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "EZ-Bar Reverse Grip Curl",
+      "hevy_name": "Reverse Curl",
+      "equipment": "ez_bar",
+      "primary_muscles": [
+        "forearms",
+        "biceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Elliptical",
+      "hevy_name": "Elliptical Trainer",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "hamstrings"
+      ],
+      "secondary_muscles": [
+        "glutes"
+      ],
+      "movement_pattern": "locomotion",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "cardio",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Face Down Plate Neck Resistance",
+      "hevy_name": "Neck Extension",
+      "equipment": "plate",
+      "primary_muscles": [
+        "neck"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Farmer's Walk",
+      "hevy_name": "Farmer's Walk",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "forearms",
+        "traps"
+      ],
+      "secondary_muscles": [
+        "abs"
+      ],
+      "movement_pattern": "carry",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Forward Arm Circle",
+      "hevy_name": "Forward Arm Circle",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "shoulders"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Forward Lunge with Twist",
+      "hevy_name": "Lunge",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "lunge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Front Squat",
+      "hevy_name": "Front Squat",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings",
+        "abs"
+      ],
+      "movement_pattern": "squat",
+      "is_compound": true,
+      "difficulty": "advanced",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Glute Kickback Machine",
+      "hevy_name": "Glute Kickback (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "hip_hinge",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Good Morning",
+      "hevy_name": "Good Morning (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "hamstrings",
+        "lower_back",
+        "glutes"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hack Squat",
+      "hevy_name": "Hack Squat (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "squat",
+      "is_compound": true,
+      "difficulty": "advanced",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hammer Curls",
+      "hevy_name": "Hammer Curl (Dumbbell)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "biceps",
+        "forearms"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hammerstrength Chest Press",
+      "hevy_name": "Chest Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hammerstrength Decline Chest Press",
+      "hevy_name": "Decline Bench Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hammerstrength Incline Chest Press",
+      "hevy_name": "Incline Chest Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hammerstrength Iso Row",
+      "hevy_name": "Iso-Lateral Row (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hammerstrength Shoulder Press",
+      "hevy_name": "Seated Shoulder Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "front_delts",
+        "side_delts"
+      ],
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "movement_pattern": "vertical_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hanging Knee Raise",
+      "hevy_name": "Hanging Knee Raise",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hanging Leg Raise",
+      "hevy_name": "Hanging Leg Raise",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hiking",
+      "hevy_name": "Hiking",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "calves",
+        "hamstrings"
+      ],
+      "movement_pattern": "locomotion",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "cardio",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Hip Thrust",
+      "hevy_name": "Hip Thrust (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Incline Back Extension",
+      "hevy_name": "Back Extension",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lower_back",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Incline Dumbbell Curl",
+      "hevy_name": "Incline Bicep Curl (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Incline Dumbbell Row",
+      "hevy_name": "Incline Row (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Incline EZ-Bar Curl",
+      "hevy_name": "Incline Bicep Curl (EZ Bar)",
+      "equipment": "ez_bar",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Incline Hammer Curl",
+      "hevy_name": "Incline Hammer Curl (Dumbbell)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "biceps",
+        "forearms"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Inverted Row",
+      "hevy_name": "Inverted Row",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Kettlebell Single Arm Farmer Walk",
+      "hevy_name": "Farmer's Walk",
+      "equipment": "kettlebell",
+      "primary_muscles": [
+        "forearms",
+        "traps"
+      ],
+      "secondary_muscles": [
+        "abs"
+      ],
+      "movement_pattern": "carry",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Kettlebell Swing",
+      "hevy_name": "Kettlebell Swing",
+      "equipment": "kettlebell",
+      "primary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "secondary_muscles": [
+        "lower_back",
+        "abs",
+        "front_delts"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Kettlebell Swing American",
+      "hevy_name": "Kettlebell Swing",
+      "equipment": "kettlebell",
+      "primary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "secondary_muscles": [
+        "lower_back",
+        "abs",
+        "front_delts"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Knee Up",
+      "hevy_name": "Knee Raise Parallel Bars",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Lat Pulldown",
+      "hevy_name": "Lat Pulldown (Cable)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "lats"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "upper_back"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Leg Curl",
+      "hevy_name": "Seated Leg Curl (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Leg Extension",
+      "hevy_name": "Leg Extension (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "quads"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Leg Press",
+      "hevy_name": "Leg Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "squat",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Leg Pull-In",
+      "hevy_name": "Leg Pull In",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Leg Raise",
+      "hevy_name": "Leg Raise",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Leg Swing",
+      "hevy_name": "Leg Swing",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Lunge",
+      "hevy_name": "Lunge",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "lunge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Lunge Twist",
+      "hevy_name": "Lunge",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "lunge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Lying Hamstrings Curl",
+      "hevy_name": "Lying Leg Curl (Machine)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Bench Press",
+      "hevy_name": "Chest Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Bicep Curl",
+      "hevy_name": "Bicep Curl (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Fly",
+      "hevy_name": "Chest Fly (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Hip Abductor",
+      "hevy_name": "Hip Abduction (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "glutes"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Hip Adductor",
+      "hevy_name": "Hip Adduction (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "adductors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Leg Press",
+      "hevy_name": "Leg Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "squat",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Overhead Press",
+      "hevy_name": "Seated Shoulder Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "front_delts",
+        "side_delts"
+      ],
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "movement_pattern": "vertical_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Preacher Curl",
+      "hevy_name": "Preacher Curl (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Rear Delt Fly",
+      "hevy_name": "Reverse Fly (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "rear_delts"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "horizontal_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Reverse Fly",
+      "hevy_name": "Reverse Fly (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "rear_delts"
+      ],
+      "secondary_muscles": [
+        "upper_back"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Row",
+      "hevy_name": "Seated Row (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Shoulder Press",
+      "hevy_name": "Seated Shoulder Press (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "front_delts",
+        "side_delts"
+      ],
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "movement_pattern": "vertical_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Tricep Dip",
+      "hevy_name": "Triceps Dip",
+      "equipment": "machine",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Machine Tricep Extension",
+      "hevy_name": "Triceps Extension (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Medicine Ball Russian Twist",
+      "hevy_name": "Russian Twist",
+      "equipment": "medicine_ball",
+      "primary_muscles": [
+        "obliques",
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "PVC Around the World",
+      "hevy_name": "PVC Around the World",
+      "equipment": "other",
+      "primary_muscles": [
+        "shoulders"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Palms-Down Dumbbell Wrist Curl",
+      "hevy_name": "Wrist Curl (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Palms-Up Dumbbell Wrist Curl",
+      "hevy_name": "Wrist Curl (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Pendlay Row",
+      "hevy_name": "Pendlay Row (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts",
+        "lower_back"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "advanced",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Plank",
+      "hevy_name": "Plank",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "obliques"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Plank Shoulder Taps",
+      "hevy_name": "Plank",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "obliques"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Preacher Curl",
+      "hevy_name": "Preacher Curl (EZ Bar)",
+      "equipment": "ez_bar",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Pull Up",
+      "hevy_name": "Pull Up",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Push Press",
+      "hevy_name": "Push Press",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "front_delts",
+        "side_delts"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "quads"
+      ],
+      "movement_pattern": "vertical_push",
+      "is_compound": true,
+      "difficulty": "advanced",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Push Up",
+      "hevy_name": "Push Up",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Reverse Barbell Curl",
+      "hevy_name": "Reverse Curl (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "forearms",
+        "biceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Reverse Crunch",
+      "hevy_name": "Reverse Crunch",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Reverse Dumbbell Curl",
+      "hevy_name": "Reverse Curl (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "forearms",
+        "biceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Romanian Deadlift",
+      "hevy_name": "Romanian Deadlift (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "hamstrings",
+        "glutes",
+        "lower_back"
+      ],
+      "secondary_muscles": [
+        "traps"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Rowing",
+      "hevy_name": "Rowing Machine",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "quads"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "cardio",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Running",
+      "hevy_name": "Running",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "hamstrings"
+      ],
+      "secondary_muscles": [
+        "calves",
+        "glutes"
+      ],
+      "movement_pattern": "locomotion",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "cardio",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Running - Treadmill",
+      "hevy_name": "Treadmill",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "hamstrings"
+      ],
+      "secondary_muscles": [
+        "calves",
+        "glutes"
+      ],
+      "movement_pattern": "locomotion",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "cardio",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Russian Twist",
+      "hevy_name": "Russian Twist",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "obliques",
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Scapular Pull Up",
+      "hevy_name": "Scapular Pull-ups",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "advanced",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Scissor Crossover Kick",
+      "hevy_name": "Scissor Kicks",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Scissor Kick",
+      "hevy_name": "Scissor Kicks",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Seated Back Extension",
+      "hevy_name": "Back Extension (Machine)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lower_back",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Seated Cable Row",
+      "hevy_name": "Seated Row (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Seated Dumbbell Curl",
+      "hevy_name": "Bicep Curl (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Seated Figure Four",
+      "hevy_name": "Seated Figure Four",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "glutes",
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Seated Leg Curl",
+      "hevy_name": "Seated Leg Curl (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Seated Machine Calf Press",
+      "hevy_name": "Seated Calf Raise",
+      "equipment": "machine",
+      "primary_muscles": [
+        "calves"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Seated Tricep Press",
+      "hevy_name": "Overhead Triceps Extension (Machine)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Side Bridge",
+      "hevy_name": "Side Plank",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "obliques",
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Single Arm Cable Bicep Curl",
+      "hevy_name": "Bicep Curl (Cable)",
+      "equipment": "cable",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Single Arm Dumbbell Tricep Extension",
+      "hevy_name": "Triceps Extension (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Single Arm Landmine Press",
+      "hevy_name": "Landmine Press",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "upper_chest",
+        "front_delts"
+      ],
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Single Leg Cable Kickback",
+      "hevy_name": "Single Leg Cable Kickback",
+      "equipment": "cable",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "hip_hinge",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Single Leg Glute Bridge",
+      "hevy_name": "Single Leg Glute Bridge",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Single Leg Leg Extension",
+      "hevy_name": "Leg Extension (Machine)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "quads"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Single Leg Overhead Kettlebell Hold",
+      "hevy_name": "Single Leg Overhead Kettlebell Hold",
+      "equipment": "kettlebell",
+      "primary_muscles": [
+        "shoulders",
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "mobility",
+      "is_bodyweight": false,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Single Leg Straight Forward Bend",
+      "hevy_name": "Single Leg Straight Forward Bend",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "hamstrings"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": true
+    },
+    {
+      "fitbod_name": "Sit Up",
+      "hevy_name": "Sit Up",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs"
+      ],
+      "secondary_muscles": [
+        "hip_flexors"
+      ],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Skullcrusher",
+      "hevy_name": "Skullcrusher (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Sled Push",
+      "hevy_name": "Sled Push",
+      "equipment": "sled",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "calves",
+        "hamstrings"
+      ],
+      "movement_pattern": "isolation_push",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Smith Machine Bench Press",
+      "hevy_name": "Bench Press (Smith Machine)",
+      "equipment": "smith_machine",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Smith Machine Calf Raise",
+      "hevy_name": "Standing Calf Raise (Smith Machine)",
+      "equipment": "smith_machine",
+      "primary_muscles": [
+        "calves"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Smith Machine Incline Bench Press",
+      "hevy_name": "Incline Bench Press (Smith Machine)",
+      "equipment": "smith_machine",
+      "primary_muscles": [
+        "upper_chest",
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Smith Machine Squat",
+      "hevy_name": "Squat (Smith Machine)",
+      "equipment": "smith_machine",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "squat",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Spider Curls",
+      "hevy_name": "Spider Curl (Dumbbell)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Stability Ball Hip Bridge",
+      "hevy_name": "Stability Ball Hip Bridge",
+      "equipment": "stability_ball",
+      "primary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "secondary_muscles": [
+        "abs"
+      ],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Stair Stepper",
+      "hevy_name": "Stair Machine",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "calves"
+      ],
+      "movement_pattern": "locomotion",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "cardio",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Standing Leg Side Hold",
+      "hevy_name": "Standing Calf Raise",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "calves"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Standing Machine Calf Press",
+      "hevy_name": "Standing Calf Raise",
+      "equipment": "machine",
+      "primary_muscles": [
+        "calves"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Step Up",
+      "hevy_name": "Step Up",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "lunge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Stiff-Legged Barbell Good Morning",
+      "hevy_name": "Good Morning (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "hamstrings",
+        "lower_back",
+        "glutes"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "hip_hinge",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Superman",
+      "hevy_name": "Superman",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lower_back",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Superman Hold",
+      "hevy_name": "Superman",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lower_back",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Superman with Scaption",
+      "hevy_name": "Superman",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lower_back",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "movement_pattern": "hip_hinge",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "T-Bar Row",
+      "hevy_name": "T Bar Row",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "lats",
+        "upper_back"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "rear_delts"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Toe Touchers",
+      "hevy_name": "Toe Touchers",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Tricep Extension",
+      "hevy_name": "Triceps Extension (Dumbbell)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_push",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Tricep Push Up",
+      "hevy_name": "Diamond Push Up",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Tricep Stretch",
+      "hevy_name": "Tricep Stretch",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "triceps"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "mobility",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "mobility",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Upright Row",
+      "hevy_name": "Upright Row (Barbell)",
+      "equipment": "barbell",
+      "primary_muscles": [
+        "side_delts",
+        "traps"
+      ],
+      "secondary_muscles": [
+        "biceps"
+      ],
+      "movement_pattern": "horizontal_pull",
+      "is_compound": true,
+      "difficulty": "intermediate",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "V-Bar Pulldown",
+      "hevy_name": "Lat Pulldown (Cable)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "lats"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "upper_back"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Vertical Knee Raise",
+      "hevy_name": "Vertical Knee Raise",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "abs",
+        "hip_flexors"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "core",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Walking",
+      "hevy_name": "Walking",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "quads",
+        "glutes"
+      ],
+      "secondary_muscles": [
+        "calves"
+      ],
+      "movement_pattern": "locomotion",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "cardio",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Walkout to Push Up",
+      "hevy_name": "Walkout to Push Up",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "chest"
+      ],
+      "secondary_muscles": [
+        "triceps",
+        "front_delts"
+      ],
+      "movement_pattern": "horizontal_push",
+      "is_compound": true,
+      "difficulty": "advanced",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Wide Grip Lat Pulldown",
+      "hevy_name": "Lat Pulldown (Cable)",
+      "equipment": "machine",
+      "primary_muscles": [
+        "lats"
+      ],
+      "secondary_muscles": [
+        "biceps",
+        "upper_back"
+      ],
+      "movement_pattern": "vertical_pull",
+      "is_compound": true,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": false,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Zottman Curl",
+      "hevy_name": "Zottman Curl (Dumbbell)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "biceps",
+        "forearms"
+      ],
+      "secondary_muscles": [],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    },
+    {
+      "fitbod_name": "Zottman Preacher Curl",
+      "hevy_name": "Zottman Preacher Curl (Dumbbell)",
+      "equipment": "bodyweight",
+      "primary_muscles": [
+        "biceps"
+      ],
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "movement_pattern": "isolation_pull",
+      "is_compound": false,
+      "difficulty": "beginner",
+      "category": "strength",
+      "is_bodyweight": true,
+      "is_unilateral": false
+    }
+  ],
+  "muscle_groups": [
+    "abs",
+    "adductors",
+    "biceps",
+    "calves",
+    "chest",
+    "forearms",
+    "front_delts",
+    "full_body",
+    "glutes",
+    "hamstrings",
+    "hip_flexors",
+    "lats",
+    "lower_back",
+    "lower_chest",
+    "neck",
+    "obliques",
+    "quads",
+    "rear_delts",
+    "shoulders",
+    "side_delts",
+    "traps",
+    "triceps",
+    "upper_back",
+    "upper_chest"
+  ],
+  "movement_patterns": [
+    "carry",
+    "core",
+    "hip_hinge",
+    "horizontal_pull",
+    "horizontal_push",
+    "isolation_pull",
+    "isolation_push",
+    "locomotion",
+    "lunge",
+    "mobility",
+    "other",
+    "squat",
+    "vertical_pull",
+    "vertical_push"
+  ],
+  "equipment_types": [
+    "barbell",
+    "bodyweight",
+    "cable",
+    "dumbbell",
+    "ez_bar",
+    "kettlebell",
+    "machine",
+    "medicine_ball",
+    "other",
+    "plate",
+    "sled",
+    "smith_machine",
+    "stability_ball"
+  ]
+}
