@@ -38,8 +38,8 @@ Use Code Interpreter for ALL parsing and calculations:
 1. Parse report using the structure described in report-format-guide.txt. Extract period data and exercise list.
 2. Filter out all warmup sets (type="warmup" or is_warmup=true)
 3. Reference exercise-database.json for muscle group classification
-4. Compute: volume per muscle group/week, push:pull ratio, upper:lower ratio, exercise variety score, weight progression trends
-5. Identify imbalances by comparing to volume targets in coaching-guidelines.txt
+4. Compute: volume per muscle group/week, push:pull ratio, upper:lower ratio, exercise variety score, weight progression trends. Reports may use any period type (weekly, monthly, quarterly, etc). Normalize volume to per-week for comparison against targets.
+5. Identify imbalances by comparing weekly-normalized volume to targets in coaching-guidelines.txt
 6. Identify stalled exercises (trend <= 0% over 4+ weeks)
 
 ## PERFORMANCE
