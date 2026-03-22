@@ -50,6 +50,10 @@ Always check the `unit_system` (JSON/YAML) or `unit` (GPT format) field:
 - **metric**: Weight in kg, distance in km.
 - **imperial**: Weight in lbs, distance in miles.
 
+For JSON and YAML reports:
+- `total_workout_time`, `strength_time`, and `cardio_time` are formatted duration strings like `0h 2m 0s`.
+- `total_workout_seconds` is the numeric duration field for calculations.
+
 ---
 
 ## 1. GPT Format (Preferred)
@@ -200,23 +204,25 @@ Each element in `periods[]`:
 
 ```json
 {
-  "date": "2024-01-01",
+  "date": "2024-01-15",
   "day_of_week": "Monday",
-  "end_date": "2024-01-07",
-  "period": "Week 1",
   "exercises": [],
   "stats": {
-    "total_workout_time": 175,
-    "strength_time": 145,
-    "cardio_time": 30,
-    "total_distance": 5.2,
-    "total_reps": 342,
-    "total_volume": 12450
+    "session_count": 1,
+    "total_workout_time": "0h 2m 0s",
+    "total_workout_seconds": 120,
+    "strength_time": "0h 2m 0s",
+    "cardio_time": "0h 0m 0s",
+    "total_distance": 0.0,
+    "distance_unit": "km",
+    "total_reps": 10,
+    "total_volume": 500.0,
+    "volume_unit": "kg*reps"
   }
 }
 ```
 
-- `end_date` and `period` are optional (present for multi-day report types).
+- `end_date` and `period` are optional (present for multi-day or aggregated report types).
 - `day_of_week` is present for daily reports.
 
 ### Exercise Object
@@ -251,17 +257,22 @@ Aggregated stats across all periods:
 
 ```json
 {
-  "date_range": {"start": "2024-01-01", "end": "2024-03-15"},
-  "total_sessions": 33,
-  "total_workout_time": 5775,
-  "total_volume": 410400,
-  "total_reps": 11286,
-  "total_distance": 57.2,
+  "date_range": {"start": "2024-01-15", "end": "2024-01-21"},
+  "total_sessions": 1,
+  "total_workout_time": "0h 2m 0s",
+  "total_strength_time": "0h 2m 0s",
+  "total_cardio_time": "0h 0m 0s",
+  "total_distance": 0.0,
+  "distance_unit": "km",
+  "total_reps": 10,
+  "total_volume": 500.0,
+  "volume_unit": "kg*reps",
   "averages": {
-    "sessions_per_week": 3.0,
-    "volume_per_session": 12436,
-    "reps_per_session": 342,
-    "workout_time_per_session": 175
+    "period": "weekly",
+    "avg_workout_time": "0h 2m 0s",
+    "avg_distance": 0.0,
+    "avg_reps": 10,
+    "avg_volume": 500.0
   }
 }
 ```
@@ -309,38 +320,51 @@ Starts with `report_type:` or `---`. The structure is identical to JSON.
 
 ```yaml
 report_type: weekly
-grouping_mode: calendar
+grouping_mode: rolling
 unit_system: metric
 format: summary
 periods:
-  - date: "2024-01-01"
-    end_date: "2024-01-07"
-    period: "Week 1"
+  - date: "2024-01-15"
+    day_of_week: Monday
     exercises:
       - name: Barbell Bench Press
-        working_sets: 3
-        warmup_sets: 1
-        total_reps: 24
-        max_weight: 80.0
+        working_sets: 1
+        warmup_sets: 0
+        total_reps: 10
+        max_weight: 50.0
         weight_unit: kg
-        total_volume: 1920
+        total_volume: 500.0
         is_cardio: false
     stats:
-      total_workout_time: 175
-      strength_time: 145
-      cardio_time: 30
-      total_distance: 5.2
-      total_reps: 342
-      total_volume: 12450
+      session_count: 1
+      total_workout_time: 0h 2m 0s
+      total_workout_seconds: 120
+      strength_time: 0h 2m 0s
+      cardio_time: 0h 0m 0s
+      total_distance: 0.0
+      distance_unit: km
+      total_reps: 10
+      total_volume: 500.0
+      volume_unit: kg*reps
 overall:
   date_range:
-    start: "2024-01-01"
-    end: "2024-03-15"
-  total_sessions: 33
-  total_volume: 410400
+    start: "2024-01-15"
+    end: "2024-01-21"
+  total_sessions: 1
+  total_workout_time: 0h 2m 0s
+  total_strength_time: 0h 2m 0s
+  total_cardio_time: 0h 0m 0s
+  total_distance: 0.0
+  distance_unit: km
+  total_reps: 10
+  total_volume: 500.0
+  volume_unit: kg*reps
   averages:
-    sessions_per_week: 3.0
-    volume_per_session: 12436
+    period: weekly
+    avg_workout_time: 0h 2m 0s
+    avg_distance: 0.0
+    avg_reps: 10
+    avg_volume: 500.0
 ```
 
 ### Parsing

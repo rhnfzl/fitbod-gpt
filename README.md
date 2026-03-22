@@ -11,7 +11,7 @@ Fitbod App → Export CSV → fitbod-report → GPT-optimized report → FitbodG
 1. Export your workout data from the Fitbod app (Log tab > settings > Export Workout Data)
 2. Go to the [Fitbod Report app](https://fitbod-report.streamlit.app/), upload your CSV, pick a date range, and select "GPT" format
 3. Copy the report using the copy button or download it
-4. Open [FitbodGPT in ChatGPT](https://chatgpt.com/g/g-69bfd1becff08191b3b93c1d0312fda9-fitbodgpt) and paste the report
+4. Open [FitbodGPT in ChatGPT](https://chatgpt.com/g/g-69bfd1becff08191b3b93c1d0312fda9-fitbodgpt) and paste or upload the report
 5. Get personalized analysis and workout recommendations
 
 The GPT export format stays weekly for consistent coaching. Source code for the report app: [fitbod-report on GitHub](https://github.com/rhnfzl/fitbod-report).
@@ -24,7 +24,7 @@ The GPT export format stays weekly for consistent coaching. Source code for the 
 - **Smart equipment inference**: Determines your available equipment from exercise history
 - **Structured workout plans**: Generates actionable plans with sets, reps, and weight guidance
 - **Strength trends**: Tracks progression and identifies plateaus
-- **209+ exercise database**: Comprehensive exercise classification with muscle groups and equipment
+- **209 exercise database**: Comprehensive exercise classification with muscle groups and equipment
 
 ## Repository Structure
 
@@ -46,6 +46,14 @@ fitbod-gpt/
 ## Setting Up the GPT
 
 See [gpt/configuration.md](gpt/configuration.md) for step-by-step setup instructions.
+
+## Publishing Checklist
+
+- Add a profile image and confirm the GPT name/description shown on the About page
+- Choose the most accurate category in the GPT builder
+- Verify your Builder Profile before listing in the GPT Store
+- Keep the GPT link-only until weekly export, paste flow, and upload flow all behave correctly
+- Add a short training disclaimer to the About page before wider sharing
 
 ## Contributing Exercises
 
