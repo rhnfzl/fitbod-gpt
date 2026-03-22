@@ -11,7 +11,7 @@ Use the opening characters of the content to determine the format:
 ```python
 def detect_format(content):
     content = content.strip()
-    if content.startswith('@fitbodgpt'):
+    if content.startswith('date_range:'):
         return 'gpt'
     if content.startswith('{'):
         return 'json'
@@ -50,12 +50,11 @@ Always check the `unit_system` (JSON/YAML) or `unit` (GPT format) field:
 
 ## 1. GPT Format (Preferred)
 
-The most token-efficient format. Starts with the `@fitbodgpt v1` header line. Data is TSV-based and organized into named sections.
+The most token-efficient format. Starts with `date_range:` metadata. Data is TSV-based and organized into named sections.
 
 ### Structure
 
 ```
-@fitbodgpt v1
 date_range: 2024-01-01 to 2024-03-15
 weeks: 11
 sessions: 33
@@ -81,7 +80,7 @@ date	exercises
 
 ### Header
 
-The lines between `@fitbodgpt v1` and the first `## ` section are key-value metadata pairs separated by `:`.
+The lines before the first `## ` section are key-value metadata pairs separated by `:`.
 
 ### Sections
 
@@ -99,15 +98,13 @@ import csv
 
 
 def parse_gpt_format(text):
-    """Parse the @fitbodgpt TSV format into a header dict and sections dict."""
+    """Parse the GPT TSV format into a header dict and sections dict."""
     sections = {}
     current = None
     lines = text.strip().split('\n')
     header = {}
 
     for line in lines:
-        if line.startswith('@fitbodgpt'):
-            continue
         if line.startswith('## '):
             current = line[3:].strip().split(' ')[0]
             sections[current] = []
