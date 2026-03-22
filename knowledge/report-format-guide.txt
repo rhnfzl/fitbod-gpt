@@ -1,13 +1,13 @@
 FitbodGPT Report Format Reference
 
-Reports can arrive in five formats: GPT-optimized, JSON, YAML, Markdown, or raw Fitbod CSV. Detect the format first, then parse accordingly using Code Interpreter.
+Reports can arrive in five formats: TSV, JSON, YAML, Markdown, or raw Fitbod CSV. Detect the format first, then parse accordingly using Code Interpreter.
 
 ---
 
 FORMAT DETECTION
 
 Identify the format by the opening content:
-- Starts with "date_range:" -> GPT-optimized format (TSV)
+- Starts with "date_range:" -> TSV report (tab-separated, most compact)
 - Starts with "{" -> JSON
 - Starts with "report_type:" or "---" -> YAML
 - Starts with "# Workout" -> Markdown
@@ -30,13 +30,13 @@ trend: Percentage change over the report period. Positive means improving.
 total_workout_time: Combined cardio + strength duration for the period
 total_distance: Distance covered during cardio exercises
 
-Unit system: Check "unit_system" (JSON/YAML) or "unit" (GPT format).
+Unit system: Check "unit_system" (JSON/YAML) or "unit" (TSV format).
   metric: weight in kg, distance in km
   imperial: weight in lbs, distance in miles
 
 ---
 
-1. GPT-OPTIMIZED FORMAT (Preferred)
+1. TSV FORMAT (Preferred)
 
 Most token-efficient. TSV-based with named sections.
 
