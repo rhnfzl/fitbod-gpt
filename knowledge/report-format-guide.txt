@@ -27,7 +27,7 @@ volume: weight x reps (working sets only), in kg*reps or lbs*reps
 max_weight: Heaviest weight used for that exercise in the period
 is_cardio: Boolean. Cardio exercises have duration/distance instead of weight/reps.
 trend: Percentage change over the report period. Positive means improving.
-total_workout_time: Combined cardio + strength duration for the period
+total_workout_time: Combined cardio + strength duration. Formatted as "Xh Ym Zs" in JSON/YAML; in minutes in TSV format.
 total_distance: Distance covered during cardio exercises
 
 Unit system: Check "unit_system" (JSON/YAML) or "unit" (TSV format).

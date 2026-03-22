@@ -6,7 +6,7 @@
 |-------|-------|
 | **Name** | FitbodGPT |
 | **Description** | Upload your Fitbod workout report and get personalized training analysis, imbalance detection, and science-backed workout plans. Strength-focused with cardio awareness. |
-| **Recommended model** | GPT-5.4 Thinking if available; otherwise use the best current reasoning model exposed in the GPT builder |
+| **Recommended model** | Use the best reasoning model available in the GPT builder at the time of setup |
 
 ## Capabilities
 
@@ -60,7 +60,7 @@ None - Fitbod has no public API. FitbodGPT is read-only (analyze data → recomm
 4. Paste contents of `instructions.md` into the Instructions field
 5. Upload the 3 knowledge files
 6. Add the 4 conversation starters
-7. Set the recommended model to GPT-5.4 Thinking if your workspace offers it
+7. Set the recommended model to the best reasoning model your workspace offers
 8. Enable Code Interpreter & Data Analysis and leave the other capabilities off unless you have a deliberate reason to expand scope
 9. Add a profile image and choose the best-fitting category in the About/configuration fields
 10. Keep this GPT private for initial testing

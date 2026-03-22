@@ -1,6 +1,6 @@
 # FitbodGPT Report Format Parsing Reference
 
-This document describes how to parse Fitbod workout report data. Reports can arrive in one of four formats: GPT, JSON, YAML, or Markdown. Detect the format first, then parse accordingly.
+This document describes how to parse Fitbod workout report data. Reports can arrive in five formats: TSV, JSON, YAML, Markdown, or raw Fitbod CSV. Detect the format first, then parse accordingly. The uploadable .txt version of this guide is the production file for ChatGPT.
 
 ---
 
@@ -40,7 +40,7 @@ Before diving into formats, understand the core fields that appear across all of
 | **max_weight** | Heaviest weight used for that exercise in the period. |
 | **is_cardio** | Boolean. Cardio exercises have duration/distance instead of weight/reps. |
 | **trend** | Percentage change over the report period. Positive means improving. |
-| **total_workout_time** | Combined cardio + strength duration for the period (in minutes). |
+| **total_workout_time** | Combined cardio + strength duration for the period. Formatted as `Xh Ym Zs` in JSON/YAML; in minutes in TSV format. |
 | **total_distance** | Distance covered during cardio exercises. Unit depends on unit system. |
 
 ### Unit System
