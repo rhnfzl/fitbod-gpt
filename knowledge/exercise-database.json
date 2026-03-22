@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "generated": "2026-03-22",
-  "source": "Fitbod2HevyConverter EXERCISE_MAPPING (209 exercises). NOTE: This is not exhaustive. For exercises not listed here, infer muscle groups and equipment from the exercise name.",
+  "source": "Fitbod2HevyConverter EXERCISE_MAPPING (209 exercises)",
   "exercises": [
     {
       "fitbod_name": "Ab Crunch Machine",
@@ -340,10 +340,10 @@
       "hevy_name": "Bench Dip",
       "equipment": "bodyweight",
       "primary_muscles": [
-        "triceps",
-        "chest"
+        "triceps"
       ],
       "secondary_muscles": [
+        "chest",
         "front_delts"
       ],
       "movement_pattern": "isolation_push",
@@ -780,7 +780,7 @@
     {
       "fitbod_name": "Cross Body Hammer Curls",
       "hevy_name": "Cross Body Hammer Curl (Dumbbell)",
-      "equipment": "bodyweight",
+      "equipment": "dumbbell",
       "primary_muscles": [
         "biceps",
         "forearms"
@@ -788,9 +788,9 @@
       "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
-      "difficulty": "beginner",
+      "difficulty": "intermediate",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": true
     },
     {
@@ -1365,11 +1365,13 @@
       "hevy_name": "Thruster (Dumbbell)",
       "equipment": "dumbbell",
       "primary_muscles": [
-        "front_delts",
-        "side_delts"
+        "quads",
+        "glutes",
+        "front_delts"
       ],
       "secondary_muscles": [
-        "triceps"
+        "triceps",
+        "hamstrings"
       ],
       "movement_pattern": "vertical_push",
       "is_compound": true,
@@ -1603,9 +1605,11 @@
       "hevy_name": "Glute Kickback (Machine)",
       "equipment": "machine",
       "primary_muscles": [
-        "triceps"
+        "glutes"
       ],
-      "secondary_muscles": [],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
       "movement_pattern": "hip_hinge",
       "is_compound": false,
       "difficulty": "beginner",
@@ -1651,7 +1655,7 @@
     {
       "fitbod_name": "Hammer Curls",
       "hevy_name": "Hammer Curl (Dumbbell)",
-      "equipment": "bodyweight",
+      "equipment": "dumbbell",
       "primary_muscles": [
         "biceps",
         "forearms"
@@ -1659,9 +1663,9 @@
       "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
-      "difficulty": "beginner",
+      "difficulty": "intermediate",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": false
     },
     {
@@ -1687,6 +1691,7 @@
       "hevy_name": "Decline Bench Press (Machine)",
       "equipment": "machine",
       "primary_muscles": [
+        "lower_chest",
         "chest"
       ],
       "secondary_muscles": [
@@ -1705,6 +1710,7 @@
       "hevy_name": "Incline Chest Press (Machine)",
       "equipment": "machine",
       "primary_muscles": [
+        "upper_chest",
         "chest"
       ],
       "secondary_muscles": [
@@ -1896,7 +1902,7 @@
     {
       "fitbod_name": "Incline Hammer Curl",
       "hevy_name": "Incline Hammer Curl (Dumbbell)",
-      "equipment": "bodyweight",
+      "equipment": "dumbbell",
       "primary_muscles": [
         "biceps",
         "forearms"
@@ -1904,9 +1910,9 @@
       "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
-      "difficulty": "beginner",
+      "difficulty": "intermediate",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": false
     },
     {
@@ -2025,11 +2031,9 @@
       "hevy_name": "Seated Leg Curl (Machine)",
       "equipment": "machine",
       "primary_muscles": [
-        "biceps"
+        "hamstrings"
       ],
-      "secondary_muscles": [
-        "forearms"
-      ],
+      "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
       "difficulty": "beginner",
@@ -2156,18 +2160,16 @@
     {
       "fitbod_name": "Lying Hamstrings Curl",
       "hevy_name": "Lying Leg Curl (Machine)",
-      "equipment": "bodyweight",
+      "equipment": "machine",
       "primary_muscles": [
-        "biceps"
+        "hamstrings"
       ],
-      "secondary_muscles": [
-        "forearms"
-      ],
+      "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
       "difficulty": "beginner",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": false
     },
     {
@@ -2440,11 +2442,9 @@
       "hevy_name": "Wrist Curl (Dumbbell)",
       "equipment": "dumbbell",
       "primary_muscles": [
-        "biceps"
-      ],
-      "secondary_muscles": [
         "forearms"
       ],
+      "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
       "difficulty": "intermediate",
@@ -2457,11 +2457,9 @@
       "hevy_name": "Wrist Curl (Dumbbell)",
       "equipment": "dumbbell",
       "primary_muscles": [
-        "biceps"
-      ],
-      "secondary_muscles": [
         "forearms"
       ],
+      "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
       "difficulty": "intermediate",
@@ -2857,11 +2855,9 @@
       "hevy_name": "Seated Leg Curl (Machine)",
       "equipment": "machine",
       "primary_muscles": [
-        "biceps"
+        "hamstrings"
       ],
-      "secondary_muscles": [
-        "forearms"
-      ],
+      "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
       "difficulty": "beginner",
@@ -2950,7 +2946,7 @@
     {
       "fitbod_name": "Single Arm Landmine Press",
       "hevy_name": "Landmine Press",
-      "equipment": "bodyweight",
+      "equipment": "barbell",
       "primary_muscles": [
         "upper_chest",
         "front_delts"
@@ -2962,7 +2958,7 @@
       "is_compound": true,
       "difficulty": "intermediate",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": true
     },
     {
@@ -2970,9 +2966,11 @@
       "hevy_name": "Single Leg Cable Kickback",
       "equipment": "cable",
       "primary_muscles": [
-        "triceps"
+        "glutes"
       ],
-      "secondary_muscles": [],
+      "secondary_muscles": [
+        "hamstrings"
+      ],
       "movement_pattern": "hip_hinge",
       "is_compound": false,
       "difficulty": "beginner",
@@ -3166,7 +3164,7 @@
     {
       "fitbod_name": "Spider Curls",
       "hevy_name": "Spider Curl (Dumbbell)",
-      "equipment": "bodyweight",
+      "equipment": "dumbbell",
       "primary_muscles": [
         "biceps"
       ],
@@ -3175,9 +3173,9 @@
       ],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
-      "difficulty": "beginner",
+      "difficulty": "intermediate",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": false
     },
     {
@@ -3338,7 +3336,7 @@
     {
       "fitbod_name": "T-Bar Row",
       "hevy_name": "T Bar Row",
-      "equipment": "bodyweight",
+      "equipment": "barbell",
       "primary_muscles": [
         "lats",
         "upper_back"
@@ -3351,7 +3349,7 @@
       "is_compound": true,
       "difficulty": "intermediate",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": false
     },
     {
@@ -3372,16 +3370,16 @@
     {
       "fitbod_name": "Tricep Extension",
       "hevy_name": "Triceps Extension (Dumbbell)",
-      "equipment": "bodyweight",
+      "equipment": "dumbbell",
       "primary_muscles": [
         "triceps"
       ],
       "secondary_muscles": [],
       "movement_pattern": "isolation_push",
       "is_compound": false,
-      "difficulty": "beginner",
+      "difficulty": "intermediate",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": false
     },
     {
@@ -3389,10 +3387,10 @@
       "hevy_name": "Diamond Push Up",
       "equipment": "bodyweight",
       "primary_muscles": [
+        "triceps",
         "chest"
       ],
       "secondary_muscles": [
-        "triceps",
         "front_delts"
       ],
       "movement_pattern": "horizontal_push",
@@ -3492,7 +3490,8 @@
       "hevy_name": "Walkout to Push Up",
       "equipment": "bodyweight",
       "primary_muscles": [
-        "chest"
+        "chest",
+        "abs"
       ],
       "secondary_muscles": [
         "triceps",
@@ -3526,7 +3525,7 @@
     {
       "fitbod_name": "Zottman Curl",
       "hevy_name": "Zottman Curl (Dumbbell)",
-      "equipment": "bodyweight",
+      "equipment": "dumbbell",
       "primary_muscles": [
         "biceps",
         "forearms"
@@ -3534,26 +3533,25 @@
       "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
-      "difficulty": "beginner",
+      "difficulty": "intermediate",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": false
     },
     {
       "fitbod_name": "Zottman Preacher Curl",
       "hevy_name": "Zottman Preacher Curl (Dumbbell)",
-      "equipment": "bodyweight",
+      "equipment": "dumbbell",
       "primary_muscles": [
-        "biceps"
-      ],
-      "secondary_muscles": [
+        "biceps",
         "forearms"
       ],
+      "secondary_muscles": [],
       "movement_pattern": "isolation_pull",
       "is_compound": false,
-      "difficulty": "beginner",
+      "difficulty": "intermediate",
       "category": "strength",
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "is_unilateral": false
     }
   ],

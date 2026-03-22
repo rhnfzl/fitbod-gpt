@@ -258,6 +258,16 @@ def detect_equipment(fitbod: str) -> str:
         return "barbell"
     if "dumbbell" in fl:
         return "dumbbell"
+    if "landmine" in fl or "t-bar" in fl:
+        return "barbell"
+    if (
+        "hammer curl" in fl
+        or "cross body hammer" in fl
+        or "spider curl" in fl
+        or "zottman" in fl
+        or fl == "tricep extension"
+    ):
+        return "dumbbell"
     if "ez-bar" in fl or "ez bar" in fl:
         return "ez_bar"
     if "kettlebell" in fl:
@@ -278,7 +288,7 @@ def detect_equipment(fitbod: str) -> str:
         "leg press", "leg curl", "leg extension", "hack squat",
         "calf press", "ab crunch machine", "glute kickback machine",
         "diverging seated row", "lat pulldown", "v-bar pulldown",
-        "wide grip lat pulldown",
+        "wide grip lat pulldown", "hamstrings curl",
     ]
     for kw in machine_keywords:
         if kw in fl:
@@ -375,20 +385,23 @@ MUSCLE_RULES: list[tuple[str, list[str], list[str]]] = [
     ("machine fly", ["chest"], ["front_delts"]),
     ("dumbbell fly", ["chest"], ["front_delts"]),
     ("incline fly", ["upper_chest"], ["front_delts"]),
+    ("hammerstrength decline chest press", ["lower_chest", "chest"], ["triceps", "front_delts"]),
+    ("hammerstrength incline chest press", ["upper_chest", "chest"], ["triceps", "front_delts"]),
+    ("hammerstrength chest press", ["chest"], ["triceps", "front_delts"]),
     ("decline bench press", ["lower_chest", "chest"], ["triceps", "front_delts"]),
     ("incline bench press", ["upper_chest", "chest"], ["triceps", "front_delts"]),
     ("close-grip bench press", ["triceps", "chest"], ["front_delts"]),
     ("bench press", ["chest"], ["triceps", "front_delts"]),
     ("chest press", ["chest"], ["triceps", "front_delts"]),
-    ("hammerstrength chest press", ["chest"], ["triceps", "front_delts"]),
-    ("hammerstrength incline chest press", ["upper_chest", "chest"], ["triceps", "front_delts"]),
-    ("hammerstrength decline chest press", ["lower_chest", "chest"], ["triceps", "front_delts"]),
-    ("decline push up", ["upper_chest", "chest"], ["triceps", "front_delts"]),
-    ("push up", ["chest"], ["triceps", "front_delts"]),
     ("walkout to push up", ["chest", "abs"], ["triceps", "front_delts"]),
     ("diamond push up", ["triceps", "chest"], ["front_delts"]),
     ("tricep push up", ["triceps", "chest"], ["front_delts"]),
+    ("decline push up", ["upper_chest", "chest"], ["triceps", "front_delts"]),
+    ("push up", ["chest"], ["triceps", "front_delts"]),
     ("landmine press", ["upper_chest", "front_delts"], ["triceps"]),
+
+    # --- Mixed / athletic compounds ---
+    ("squat to shoulder press", ["quads", "glutes", "front_delts"], ["triceps", "hamstrings"]),
 
     # --- Shoulders ---
     ("arnold", ["front_delts", "side_delts"], ["triceps"]),
@@ -406,7 +419,15 @@ MUSCLE_RULES: list[tuple[str, list[str], list[str]]] = [
     ("shrug", ["traps"], []),
     ("neck", ["neck"], []),
 
+    # --- Legs / hips that would otherwise match generic arm rules ---
+    ("glute kickback", ["glutes"], ["hamstrings"]),
+    ("cable kickback", ["glutes"], ["hamstrings"]),
+    ("leg curl", ["hamstrings"], []),
+    ("hamstrings curl", ["hamstrings"], []),
+    ("wrist curl", ["forearms"], []),
+
     # --- Arms: Biceps ---
+    ("zottman preacher curl", ["biceps", "forearms"], []),
     ("spider curl", ["biceps"], ["forearms"]),
     ("preacher curl", ["biceps"], ["forearms"]),
     ("hammer curl", ["biceps", "forearms"], []),
@@ -416,6 +437,7 @@ MUSCLE_RULES: list[tuple[str, list[str], list[str]]] = [
     ("curl", ["biceps"], ["forearms"]),
 
     # --- Arms: Triceps ---
+    ("bench dip", ["triceps"], ["chest", "front_delts"]),
     ("skullcrusher", ["triceps"], []),
     ("triceps? extension", ["triceps"], []),
     ("triceps? pushdown", ["triceps"], []),
@@ -425,13 +447,10 @@ MUSCLE_RULES: list[tuple[str, list[str], list[str]]] = [
     ("tricep", ["triceps"], []),
     ("kickback", ["triceps"], []),
     ("dip", ["triceps", "chest"], ["front_delts"]),
-    ("bench dip", ["triceps"], ["chest", "front_delts"]),
 
     # --- Legs ---
     ("hip thrust", ["glutes", "hamstrings"], []),
     ("glute bridge", ["glutes", "hamstrings"], []),
-    ("glute kickback", ["glutes"], ["hamstrings"]),
-    ("cable kickback", ["glutes"], ["hamstrings"]),
     ("hip abduction", ["glutes"], []),
     ("hip abductor", ["glutes"], []),
     ("hip adduction", ["adductors"], []),
@@ -440,20 +459,14 @@ MUSCLE_RULES: list[tuple[str, list[str], list[str]]] = [
     ("front squat", ["quads", "glutes"], ["hamstrings", "abs"]),
     ("goblet squat", ["quads", "glutes"], ["hamstrings"]),
     ("bulgarian split squat", ["quads", "glutes"], ["hamstrings"]),
-    ("squat to shoulder press", ["quads", "glutes", "front_delts"], ["triceps", "hamstrings"]),
     ("squat", ["quads", "glutes"], ["hamstrings"]),
     ("lunge", ["quads", "glutes"], ["hamstrings"]),
     ("step up", ["quads", "glutes"], ["hamstrings"]),
     ("leg press", ["quads", "glutes"], ["hamstrings"]),
     ("leg extension", ["quads"], []),
-    ("leg curl", ["hamstrings"], []),
-    ("hamstrings curl", ["hamstrings"], []),
     ("calf press", ["calves"], []),
     ("calf raise", ["calves"], []),
     ("standing leg side hold", ["calves"], []),
-
-    # --- Forearms ---
-    ("wrist curl", ["forearms"], []),
 
     # --- Carries ---
     ("farmer", ["forearms", "traps"], ["abs"]),
@@ -506,11 +519,11 @@ MOVEMENT_PATTERN_RULES: list[tuple[str, str]] = [
     # Horizontal push
     ("bench press", "horizontal_push"),
     ("chest press", "horizontal_push"),
-    ("push up", "horizontal_push"),
     ("walkout to push up", "horizontal_push"),
     ("diamond push up", "horizontal_push"),
     ("tricep push up", "horizontal_push"),
     ("decline push up", "horizontal_push"),
+    ("push up", "horizontal_push"),
     ("fly", "horizontal_push"),  # chest fly is a push accessory
     ("landmine press", "horizontal_push"),
 
@@ -525,6 +538,7 @@ MOVEMENT_PATTERN_RULES: list[tuple[str, str]] = [
     ("overhead press", "vertical_push"),
     ("arnold", "vertical_push"),
     ("push press", "vertical_push"),
+    ("squat to shoulder press", "vertical_push"),
     ("lateral raise", "isolation_push"),
     ("shoulder raise", "isolation_push"),
     ("front raise", "isolation_push"),
@@ -559,8 +573,8 @@ MOVEMENT_PATTERN_RULES: list[tuple[str, str]] = [
     ("hack squat", "squat"),
 
     # Isolation push
-    ("dip", "isolation_push"),
     ("bench dip", "isolation_push"),
+    ("dip", "isolation_push"),
     ("tricep stretch", "mobility"),
     ("tricep press", "isolation_push"),
     ("tricep", "isolation_push"),
@@ -578,8 +592,8 @@ MOVEMENT_PATTERN_RULES: list[tuple[str, str]] = [
     ("sled push", "isolation_push"),
 
     # Isolation pull
-    ("curl", "isolation_pull"),
     ("hammer curl", "isolation_pull"),
+    ("zottman preacher curl", "isolation_pull"),
     ("reverse fly", "isolation_pull"),
     ("rear delt", "isolation_pull"),
     ("dumbbell back fly", "isolation_pull"),
@@ -588,6 +602,7 @@ MOVEMENT_PATTERN_RULES: list[tuple[str, str]] = [
     ("hip adduction", "isolation_pull"),
     ("hip adductor", "isolation_pull"),
     ("wrist curl", "isolation_pull"),
+    ("curl", "isolation_pull"),
     ("neck", "isolation_pull"),
 
     # Core

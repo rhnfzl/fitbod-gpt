@@ -30,6 +30,10 @@ Before diving into formats, understand the core fields that appear across all of
 
 | Field | Description |
 |---|---|
+| **report_type** | Period grouping used for the report (`weekly`, `monthly`, `quarterly`, etc.). |
+| **grouping_mode** | `rolling` or `calendar`. Only relevant for grouped reports. |
+| **period_count** | Number of periods represented in the report. |
+| **session_count** | Number of workouts in a given period. |
 | **working_sets** | Number of non-warmup sets. This is the primary metric for volume analysis. |
 | **warmup_sets** | Warmup sets. **IGNORE these for all analysis.** |
 | **volume** | weight x reps (working sets only), expressed in kg\*reps or lbs\*reps. |
@@ -56,14 +60,16 @@ The most token-efficient format. Starts with `date_range:` metadata. Data is TSV
 
 ```
 date_range: 2024-01-01 to 2024-03-15
-weeks: 11
+report_type: weekly
+grouping_mode: rolling
+period_count: 11
 sessions: 33
 unit: metric
 exercises: 24
 
-## weekly_summary
-week	sessions	strength_min	cardio_min	volume_kg	reps	distance_km
-2024-01-01	3	145	30	12450	342	5.2
+## period_summary
+period	sessions	strength_min	cardio_min	volume_kg	reps	distance_km
+2024-01-01 to 2024-01-07	3	145	30	12450	342	5.2
 
 ## exercise_stats
 exercise	sessions	working_sets	total_reps	max_kg	avg_kg	total_volume	trend
@@ -86,7 +92,7 @@ The lines before the first `## ` section are key-value metadata pairs separated 
 
 Each `## section_name` line starts a new TSV section. The first line after the section heading is the column header row; subsequent lines are data rows.
 
-- **weekly_summary** -- One row per week with session counts, time breakdowns, volume, reps, and distance.
+- **period_summary** -- One row per period with session counts, time breakdowns, volume, reps, and distance. Period labels can be weekly ranges, calendar labels such as `January 2024`, or rolling windows.
 - **exercise_stats** -- One row per exercise with aggregated stats across the report period.
 - **muscle_volume** -- One row per muscle group with average weekly sets and trend.
 - **recent_sessions** -- One row per recent workout date with a compact exercise notation (`Name:SetsxReps@Weight`).
@@ -130,11 +136,12 @@ header, sections = parse_gpt_format(content)
 
 # Access metadata
 date_range = header['date_range']       # "2024-01-01 to 2024-03-15"
+report_type = header['report_type']     # "weekly"
 unit = header['unit']                    # "metric"
 
-# Iterate weekly summaries
-for week in sections['weekly_summary']:
-    print(week['week'], week['volume_kg'])
+# Iterate period summaries
+for period in sections['period_summary']:
+    print(period['period'], period['volume_kg'])
 
 # Find top exercises by volume
 exercises = sections['exercise_stats']
@@ -359,34 +366,60 @@ def parse_yaml_format(content):
 
 ## 4. Markdown Format
 
-Starts with `# Workout Summary Report`. Human-readable but requires regex parsing to extract structured data.
+Starts with `# Workout Summary Report`. Human-readable and faithful to the report UI, but less structured than the GPT/JSON/YAML formats.
 
 ### Structure
 
 ```markdown
 # Workout Summary Report
 
-**Report Type:** Weekly
-**Date Range:** 2024-01-01 to 2024-03-15
-**Unit System:** Metric
-
 ## Week: 2024-01-01 to 2024-01-07
 
 ### Volume by Exercise
-- Barbell Bench Press: 1920.00 kg*reps (3 working sets, 1 warmup sets, max 80.0 kg)
-- Dumbbell Incline Press: 900.00 kg*reps (3 working sets, 0 warmup sets, max 30.0 kg)
+- Barbell Bench Press: 1920.00 kg*reps
+- Dumbbell Incline Press: 900.00 kg*reps
 
 ### Distance by Exercise
 - Treadmill Running: 5.20 km
 
 ### Summary Statistics
-- Total Volume: 12450.00 kg*reps
-- Total Reps: 342
+- Total Workout Time: 2h 55m 0s
+- Strength Training Time: 2h 25m 0s
+- Cardio Time: 0h 30m 0s
 - Total Distance: 5.20 km
-- Total Workout Time: 175 min
-- Strength Time: 145 min
-- Cardio Time: 30 min
+- Total Reps: 342
+- Total Volume: 12450.00 kg*reps
+
+---
+
+# Overall Summary for 2024-01-01 to 2024-03-15
+
+### Total Volume by Exercise
+- Barbell Bench Press: 34584.00 kg*reps
+
+### Overall Summary Statistics
+- Total Workout Time: 57h 45m 0s
+- Total Strength Training Time: 48h 15m 0s
+- Total Cardio Time: 9h 30m 0s
+- Total Distance: 57.20 km
+- Total Reps: 11286
+- Total Volume: 410400.00 kg*reps
+
+### Weekly Averages
+- Average Workout Time: 1h 45m 0s
+- Average Strength Training Time: 1h 20m 0s
+- Average Cardio Time: 0h 25m 0s
+- Average Distance: 5.20 km
+- Average Reps: 342
+- Average Volume: 12450.00 kg*reps
 ```
+
+### Notes
+
+- There is **no dedicated metadata block** with `Report Type`, `Date Range`, or `Unit System` fields.
+- For grouped reports (for example monthly), the exporter adds a heading such as `# Monthly Summary` before the period sections.
+- Weekly reports use headings like `## Week: 2024-01-01 to 2024-01-07`.
+- Daily and grouped reports use `## <period label>` headings followed by the same section structure.
 
 ### Parsing
 
@@ -395,74 +428,34 @@ import re
 
 
 def parse_markdown_format(content):
-    """Extract structured data from the Markdown report format."""
+    """Extract period blocks and the overall summary from markdown output."""
     result = {
-        'metadata': {},
         'periods': [],
+        'overall_heading': None,
     }
 
-    # Extract metadata
-    for key in ['Report Type', 'Date Range', 'Unit System']:
-        match = re.search(rf'\*\*{key}:\*\*\s*(.+)', content)
-        if match:
-            result['metadata'][key.lower().replace(' ', '_')] = match.group(1).strip()
+    overall_match = re.search(r'^# Overall Summary for (.+)$', content, re.MULTILINE)
+    if overall_match:
+        result['overall_heading'] = overall_match.group(1).strip()
 
-    # Split into period sections
-    period_pattern = re.compile(
-        r'## (?:Week|Month|Day|Quarter|Year): (.+?)(?=\n## |\Z)',
-        re.DOTALL
-    )
+    period_pattern = re.compile(r'^## (.+?)\n(.*?)(?=^## |^# Overall Summary for |\Z)', re.MULTILINE | re.DOTALL)
 
     for period_match in period_pattern.finditer(content):
-        period_text = period_match.group(0)
-        period_header = period_match.group(1).strip()
-        period_data = {'header': period_header, 'exercises': [], 'stats': {}}
+        period_heading = period_match.group(1).strip()
+        period_text = period_match.group(2)
+        period_data = {'heading': period_heading, 'volume_lines': [], 'distance_lines': [], 'stats': []}
 
-        # Parse volume exercises
-        volume_pattern = re.compile(
-            r'- (.+?): ([\d.]+) (\w+\*?\w*)'
-            r'(?: \((\d+) working sets, (\d+) warmup sets, max ([\d.]+) (\w+)\))?'
-        )
-        volume_section = re.search(
-            r'### Volume by Exercise\n(.*?)(?=###|\Z)', period_text, re.DOTALL
-        )
+        volume_section = re.search(r'### Volume by Exercise\n(.*?)(?=\n### |\Z)', period_text, re.DOTALL)
         if volume_section:
-            for m in volume_pattern.finditer(volume_section.group(1)):
-                exercise = {
-                    'name': m.group(1),
-                    'total_volume': float(m.group(2)),
-                    'volume_unit': m.group(3),
-                }
-                if m.group(4) is not None:
-                    exercise['working_sets'] = int(m.group(4))
-                    exercise['warmup_sets'] = int(m.group(5))
-                    exercise['max_weight'] = float(m.group(6))
-                    exercise['weight_unit'] = m.group(7)
-                period_data['exercises'].append(exercise)
+            period_data['volume_lines'] = [line for line in volume_section.group(1).splitlines() if line.startswith('- ')]
 
-        # Parse distance exercises
-        distance_section = re.search(
-            r'### Distance by Exercise\n(.*?)(?=###|\Z)', period_text, re.DOTALL
-        )
+        distance_section = re.search(r'### Distance by Exercise\n(.*?)(?=\n### |\Z)', period_text, re.DOTALL)
         if distance_section:
-            dist_pattern = re.compile(r'- (.+?): ([\d.]+) (\w+)')
-            for m in dist_pattern.finditer(distance_section.group(1)):
-                period_data['exercises'].append({
-                    'name': m.group(1),
-                    'distance': float(m.group(2)),
-                    'distance_unit': m.group(3),
-                    'is_cardio': True,
-                })
+            period_data['distance_lines'] = [line for line in distance_section.group(1).splitlines() if line.startswith('- ')]
 
-        # Parse summary statistics
-        stats_section = re.search(
-            r'### Summary Statistics\n(.*?)(?=##|\Z)', period_text, re.DOTALL
-        )
+        stats_section = re.search(r'### Summary Statistics\n(.*?)(?=\n---|\Z)', period_text, re.DOTALL)
         if stats_section:
-            stat_pattern = re.compile(r'- (.+?): ([\d.]+)\s*(\w*)')
-            for m in stat_pattern.finditer(stats_section.group(1)):
-                stat_name = m.group(1).strip().lower().replace(' ', '_')
-                period_data['stats'][stat_name] = float(m.group(2))
+            period_data['stats'] = [line for line in stats_section.group(1).splitlines() if line.startswith('- ')]
 
         result['periods'].append(period_data)
 

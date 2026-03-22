@@ -14,6 +14,8 @@ Fitbod App → Export CSV → fitbod-report → GPT-optimized report → FitbodG
 4. Open FitbodGPT in ChatGPT and paste/upload the report
 5. Get personalized analysis and workout recommendations
 
+Note: the `fitbod-report` app keeps GPT exports weekly for FitbodGPT, even if you use broader periods for the other export formats.
+
 ## Features
 
 - **Multi-format input**: Accepts GPT, JSON, YAML, and Markdown reports
