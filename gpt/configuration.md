@@ -19,11 +19,13 @@
 
 ## Knowledge Files
 
-Upload these 3 files from the `knowledge/` directory:
+Upload these 3 `.txt`/`.json` files from the `knowledge/` directory. Use the `.txt` versions (not `.md`) for better RAG retrieval in ChatGPT:
 
-1. **exercise-database.json** (~35KB) — 209 Fitbod exercises with muscle groups, equipment, movement patterns
-2. **training-principles.md** (~4KB) — Volume landmarks, progressive overload, splits, recovery science
-3. **report-format-guide.md** (~5KB) — Parsing instructions for all 4 report formats (GPT/JSON/YAML/MD)
+1. **exercise-database.json** (~35KB) - 209 Fitbod exercises with muscle groups, equipment, movement patterns
+2. **training-principles.txt** (~4KB) - Volume landmarks, progressive overload, splits, recovery science
+3. **report-format-guide.txt** (~5KB) - Format descriptions for all 5 input types (GPT/JSON/YAML/Markdown/raw CSV)
+
+The `.md` versions are kept in the repo for GitHub readability but should not be uploaded to the GPT builder.
 
 The `fitbod-report` app keeps GPT exports weekly by default for FitbodGPT so the coaching prompt and confidence tiers stay week-based.
 

@@ -1,0 +1,143 @@
+FitbodGPT Report Format Reference
+
+Reports can arrive in five formats: GPT-optimized, JSON, YAML, Markdown, or raw Fitbod CSV. Detect the format first, then parse accordingly using Code Interpreter.
+
+---
+
+FORMAT DETECTION
+
+Identify the format by the opening content:
+- Starts with "date_range:" -> GPT-optimized format (TSV)
+- Starts with "{" -> JSON
+- Starts with "report_type:" or "---" -> YAML
+- Starts with "# Workout" -> Markdown
+- Starts with "Date,Exercise,Reps" -> Raw Fitbod CSV export
+
+---
+
+KEY FIELDS (all formats except raw CSV)
+
+report_type: Period grouping (weekly, monthly, quarterly, etc.)
+grouping_mode: "rolling" or "calendar"
+period_count: Number of periods in the report
+session_count: Number of workouts in a given period
+working_sets: Non-warmup sets. Primary metric for volume analysis.
+warmup_sets: IGNORE these for all analysis.
+volume: weight x reps (working sets only), in kg*reps or lbs*reps
+max_weight: Heaviest weight used for that exercise in the period
+is_cardio: Boolean. Cardio exercises have duration/distance instead of weight/reps.
+trend: Percentage change over the report period. Positive means improving.
+total_workout_time: Combined cardio + strength duration for the period
+total_distance: Distance covered during cardio exercises
+
+Unit system: Check "unit_system" (JSON/YAML) or "unit" (GPT format).
+  metric: weight in kg, distance in km
+  imperial: weight in lbs, distance in miles
+
+---
+
+1. GPT-OPTIMIZED FORMAT (Preferred)
+
+Most token-efficient. TSV-based with named sections.
+
+Header: key-value pairs, one per line (date_range, report_type, grouping_mode, period_count, sessions, unit, exercises).
+
+Sections start with "## section_name". First line after the heading is the column header row (tab-separated). Subsequent lines are data rows.
+
+Sections:
+- period_summary: One row per period. Columns: period, sessions, strength_min, cardio_min, volume_kg, reps, distance_km
+- exercise_stats: One row per exercise. Columns: exercise, sessions, working_sets, total_reps, max_kg, avg_kg, total_volume, trend
+- muscle_volume: One row per muscle group. Columns: muscle, weekly_avg_sets, trend
+- recent_sessions: One row per recent workout date. Compact exercise notation: Name:SetsxReps@Weight (e.g., "Barbell Bench Press:3x8@50.0kg")
+
+Optional section:
+- unknown_exercises: One exercise name per line. These were not in the exercise database and need muscle group inference.
+
+---
+
+2. JSON FORMAT
+
+Starts with "{". Top-level fields: report_type, grouping_mode, unit_system, format ("summary" or "detailed"), periods[], overall{}.
+
+Each period has: date, day_of_week (optional), end_date (optional), period (optional), exercises[], stats{}.
+
+Each exercise has: name, working_sets, warmup_sets, total_reps, max_weight, weight_unit, total_volume, is_cardio. In "detailed" format, also has sets[] with per-set weight, reps, and type ("working" or "warmup").
+
+Stats have: total_workout_time (string), total_workout_seconds (number), strength_time, cardio_time, total_distance, distance_unit, total_reps, total_volume, volume_unit.
+
+Overall has: date_range (start/end), totals, and averages per period.
+
+---
+
+3. YAML FORMAT
+
+Starts with "report_type:" or "---". Identical structure to JSON. Parse with yaml.safe_load.
+
+---
+
+4. MARKDOWN FORMAT
+
+Starts with "# Workout Summary Report". Human-readable, less structured.
+
+Period sections use headings like "## Week: 2024-01-01 to 2024-01-07".
+Each period has subsections: "### Volume by Exercise", "### Distance by Exercise", "### Summary Statistics" (bullet points).
+
+Overall section: "# Overall Summary for [date range]" with "### Total Volume by Exercise", "### Overall Summary Statistics", "### Weekly Averages".
+
+No dedicated metadata block for report_type, date_range, or unit_system. These must be inferred from content.
+
+---
+
+5. RAW FITBOD CSV
+
+Direct export from the Fitbod app. One row per set. 11 columns:
+
+Date: Timestamp with timezone offset (e.g., "2026-03-04 07:20:06 +0000")
+Exercise: Exercise name (e.g., "Barbell Bench Press", "Running")
+Reps: Number of repetitions. 0 for cardio/timed exercises.
+Weight(kg): Weight in kilograms. 0.0 for bodyweight/cardio.
+Duration(s): Duration in seconds. 0.0 for strength exercises.
+Distance(m): Distance in meters. 0.0 for non-cardio.
+Incline: Incline setting. Usually 0.0.
+Resistance: Resistance setting. Usually 0.0.
+isWarmup: "true" or "false". Exclude warmup sets from all analysis.
+Note: User notes. Usually empty.
+multiplier: Weight multiplier for per-arm/per-leg exercises (e.g., 1.0 for barbell, 2.0 for dumbbells if each arm counted separately). Multiply weight by this value.
+
+Cardio detection from raw CSV:
+- Duration > 0 AND Distance > 0 -> cardio (running, cycling, etc.)
+- Reps == 0 AND Duration > 300 -> also cardio (elliptical, rowing, etc.)
+- Everything else with reps > 0 or weight > 0 -> strength
+
+When processing raw CSV:
+- Group rows by date to identify sessions
+- Apply weight multiplier: effective_weight = Weight(kg) * multiplier
+- Exclude rows where isWarmup is "true"
+- Calculate volume per exercise: sum of (effective_weight * reps) for working sets
+- Map exercise names to muscle groups using the exercise database or inference
+
+Note: Raw CSV has no pre-computed summaries, trends, or muscle volumes. For richer analysis with pre-computed metrics, recommend the user generate a report at https://fitbod-report.streamlit.app/
+
+---
+
+UNKNOWN EXERCISES
+
+The exercise database covers about 209 common Fitbod exercises but is not exhaustive. When you encounter exercises not in the database:
+1. Do NOT skip them. Infer muscle groups from the exercise name.
+2. Include them in volume and analysis calculations.
+3. Briefly note to the user which exercises you inferred.
+4. You can still recommend these exercises in workout plans.
+
+---
+
+EDGE CASES
+
+Same-timestamp exports: Some Fitbod data has all exercises in a session sharing identical timestamps. Duration is estimated rather than measured.
+
+Weight multiplier (processed reports only): Already applied during report generation. Do not multiply again. Raw CSV: you must apply the multiplier yourself.
+
+Empty or missing fields: Treat missing numbers as 0, missing text as empty.
+
+Missing sets array: Report is in summary mode. Per-set data unavailable.
+
+Warmup sets: Always exclude from volume and analysis. Only working_sets count.
