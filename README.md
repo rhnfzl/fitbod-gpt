@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/fitbod-gpt-logo.png" alt="FitbodGPT logo" width="200">
+</p>
+
 # FitbodGPT
 
 A custom GPT inside ChatGPT that analyzes your Fitbod workout data and provides personalized training analysis, imbalance detection, and science-backed workout plans.
