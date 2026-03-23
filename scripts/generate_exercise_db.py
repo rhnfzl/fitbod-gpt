@@ -18,7 +18,7 @@ from datetime import date
 from typing import Any
 
 # ---------------------------------------------------------------------------
-# Source data: Fitbod name -> Hevy name (219 exercises)
+# Source data: Fitbod name -> Hevy name (209 exercises)
 # ---------------------------------------------------------------------------
 EXERCISE_MAPPING: dict[str, str] = {
     "Ab Crunch Machine": "Crunch (Machine)",

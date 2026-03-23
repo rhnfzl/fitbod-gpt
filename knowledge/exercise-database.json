@@ -3355,7 +3355,6 @@
       ],
       "equipment": "cable",
       "primary_muscles": [
-        "biceps",
         "biceps"
       ],
       "secondary_muscles": [
@@ -5093,7 +5092,6 @@
       ],
       "equipment": "dumbbell",
       "primary_muscles": [
-        "glutes",
         "glutes"
       ],
       "secondary_muscles": [
@@ -5243,7 +5241,6 @@
       ],
       "equipment": "dumbbell",
       "primary_muscles": [
-        "biceps",
         "biceps"
       ],
       "secondary_muscles": [
@@ -6436,7 +6433,6 @@
         "rear_delts"
       ],
       "secondary_muscles": [
-        "upper_back",
         "upper_back"
       ],
       "movement_pattern": "isolation_pull",
@@ -6718,7 +6714,6 @@
       ],
       "equipment": "bodyweight",
       "primary_muscles": [
-        "glutes",
         "glutes"
       ],
       "secondary_muscles": [
@@ -10051,7 +10046,6 @@
       ],
       "equipment": "resistance_band",
       "primary_muscles": [
-        "biceps",
         "biceps"
       ],
       "secondary_muscles": [
@@ -10507,7 +10501,6 @@
       ],
       "equipment": "resistance_band",
       "primary_muscles": [
-        "glutes",
         "glutes"
       ],
       "secondary_muscles": [
@@ -11806,7 +11799,6 @@
       ],
       "equipment": "resistance_band",
       "primary_muscles": [
-        "glutes",
         "glutes"
       ],
       "secondary_muscles": [
@@ -11975,7 +11967,6 @@
       ],
       "equipment": "resistance_band",
       "primary_muscles": [
-        "glutes",
         "glutes"
       ],
       "secondary_muscles": [
@@ -12172,7 +12163,6 @@
       ],
       "equipment": "resistance_band",
       "primary_muscles": [
-        "glutes",
         "glutes"
       ],
       "secondary_muscles": [],
@@ -14154,7 +14144,6 @@
         "abs"
       ],
       "secondary_muscles": [
-        "glutes",
         "glutes"
       ],
       "movement_pattern": "mobility",
@@ -15393,7 +15382,6 @@
         "hip_flexors"
       ],
       "secondary_muscles": [
-        "glutes",
         "glutes"
       ],
       "movement_pattern": "mobility",
@@ -15584,7 +15572,6 @@
         "obliques"
       ],
       "secondary_muscles": [
-        "glutes",
         "glutes"
       ],
       "movement_pattern": "mobility",
@@ -17725,7 +17712,6 @@
       ],
       "equipment": "bodyweight",
       "primary_muscles": [
-        "glutes",
         "glutes"
       ],
       "secondary_muscles": [
