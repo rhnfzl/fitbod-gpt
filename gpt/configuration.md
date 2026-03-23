@@ -26,8 +26,6 @@ Upload these 4 files from the `knowledge/` directory. Use `.txt` versions (not `
 3. **report-format-guide.txt** (~5KB) - Format descriptions for all 5 input types (TSV/JSON/YAML/Markdown/raw CSV)
 4. **coaching-guidelines.txt** (~10KB) - User level detection, injury handling, recovery data interpretation, volume targets, split recommendations, deload protocols
 
-The `.md` versions of some files are kept in the repo for GitHub readability but should not be uploaded to the GPT builder.
-
 The `fitbod-report` app keeps GPT exports weekly by default for FitbodGPT so the coaching prompt and confidence tiers stay week-based.
 
 ## Conversation Starters
