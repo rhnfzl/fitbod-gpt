@@ -24,7 +24,7 @@ second_half_vol_pw: Float. Average weekly volume in second half.
 volume_drop_pct: Float or "N/A". Percentage change from first to second half. Negative means drop.
 gap_weeks: Comma-separated ISO dates (week start) or "none". Weeks with no training data in the report.
 unknown_exercise_count: Integer. Custom/unrecognized exercises excluded from ratio calculations. If > 0, ratios are approximate.
-cardio_undercount: "true" or "false". True when recent sessions contain cardio but period cardio_min fields are all 0.
+cardio_undercount: "true" or "false". True when all period cardio times are zero but the last 5 periods contain at least one cardio exercise (e.g., Running, Walking).
 
 ---
 
@@ -60,8 +60,8 @@ When these sections are absent:
      - Data depth (10%): <4wk=0, 4-26=5, 26+=10
      - Sophistication (10%): % of sets on free weights (barbell/dumbbell/kettlebell/ez_bar) or unilateral, mapped to 0-10
      - Final: sum(axis * weight) * 10. 0-33=Beginner, 34-66=Intermediate, 67-100=Advanced.
-  6. Stalled exercises: filter for sessions >= 4, trend <= 0%, strength category. Split into compounds and isolations.
-  7. Training gaps: compare period start dates to all expected week starts in the date range. Missing dates are gaps.
-  8. Volume drop: split the reported periods (NOT the full date range) into first half and second half. Do NOT zero-fill missing weeks — only average the periods that exist in the report. Compare avg sessions and avg volume between halves. Flag if drop > 30%.
+  6. Stalled exercises: filter for sessions >= 4, trend <= 0%, strength category. Split into compounds and isolations. Sort each group by trend ascending (most negative first).
+  7. Training gaps: only detect for weekly reports (period intervals of 5-9 days). Compare period start dates to expected week starts in the date range. Missing dates are gaps. Skip gap detection for monthly/quarterly/yearly reports.
+  8. Volume drop: split the reported periods (NOT the full date range) into first half and second half. Do NOT zero-fill missing weeks — only average the periods that exist in the report. Use total_volume from each period's stats. Compare avg sessions and avg volume between halves. Flag if drop > 30%. Note: for non-weekly period types, the values represent per-period averages, not per-week.
   9. Equipment: collect unique equipment types from exercises with working_sets > 0. Map to human-friendly names.
   10. For exercises not in the database, infer muscle groups from the name and track them as unknown.
