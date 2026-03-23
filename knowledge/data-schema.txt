@@ -42,10 +42,10 @@ pull-up bar
 ---
 
 When these sections are present:
-  Use the precomputed values for the initial analysis summary. You do NOT need to recompute push:pull ratio, upper:lower ratio, level score, stalled exercises, gap weeks, volume drop, or equipment from raw data. You still need to read the period_summary, exercise_stats, and muscle_volume sections for the detailed numbers.
+  Use the precomputed values for the initial analysis summary. You still need to read the period_summary, exercise_stats, and muscle_volume sections for the detailed numbers. If anything looks unusual or inconsistent (e.g., a ratio that doesn't match what you see in the raw data), use Code Interpreter to cross-check before presenting it. The precomputed values are a starting point, not a substitute for judgment.
 
 When these sections are absent:
-  The user uploaded raw CSV data, an older report, or disabled precomputation. Compute everything via Code Interpreter using these steps:
+  The user uploaded a raw CSV export or TXT file directly from Fitbod, or the report was generated without the precomputation option enabled. Compute everything via Code Interpreter using these steps:
 
   1. Load exercise-database.json. For each exercise in the report, look up its movement_pattern, primary_muscles, equipment, is_compound, and category.
   2. Filter to strength exercises only (category = "strength" or "plyometric"). Skip cardio and mobility.
