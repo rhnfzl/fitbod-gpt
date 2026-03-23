@@ -50,7 +50,7 @@ When these sections are absent:
   1. Load exercise-database.json. For each exercise in the report, look up its movement_pattern, primary_muscles, equipment, is_compound, and category.
   2. Filter to strength exercises only (category = "strength" or "plyometric"). Skip cardio and mobility.
   3. Push:pull ratio: sum working_sets where movement_pattern is horizontal_push/vertical_push/isolation_push (push) vs horizontal_pull/vertical_pull/isolation_pull (pull). Divide push by pull.
-  4. Upper:lower ratio: from muscle_volume section, sum weekly_avg_sets for upper muscles (chest, upper_chest, lats, upper_back, shoulders, front_delts, side_delts, rear_delts, biceps, triceps, traps, forearms) vs lower muscles (quads, hamstrings, glutes, calves, adductors, hip_flexors).
+  4. Upper:lower ratio: use the muscle_volume section's weekly_avg_sets (NOT working_sets from exercise_stats). Sum for upper muscles (chest, upper_chest, lats, upper_back, shoulders, front_delts, side_delts, rear_delts, biceps, triceps, traps, forearms) vs lower muscles (quads, hamstrings, glutes, calves, adductors, hip_flexors).
   5. Level score (7-axis weighted, see coaching-guidelines.txt for full formula):
      - Exercise variety (15%): <6=0, 6-15=5, >15=10 unique strength exercises
      - Training frequency (15%): <2/wk=0, 2-4=5, >4=10
@@ -62,6 +62,6 @@ When these sections are absent:
      - Final: sum(axis * weight) * 10. 0-33=Beginner, 34-66=Intermediate, 67-100=Advanced.
   6. Stalled exercises: filter for sessions >= 4, trend <= 0%, strength category. Split into compounds and isolations.
   7. Training gaps: compare period start dates to all expected week starts in the date range. Missing dates are gaps.
-  8. Volume drop: split periods into first half and second half. Compare avg sessions/week and avg volume/week. Flag if drop > 30%.
+  8. Volume drop: split the reported periods (NOT the full date range) into first half and second half. Do NOT zero-fill missing weeks — only average the periods that exist in the report. Compare avg sessions and avg volume between halves. Flag if drop > 30%.
   9. Equipment: collect unique equipment types from exercises with working_sets > 0. Map to human-friendly names.
   10. For exercises not in the database, infer muscle groups from the name and track them as unknown.
