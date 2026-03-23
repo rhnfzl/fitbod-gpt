@@ -104,3 +104,24 @@ See coaching-guidelines.txt for full autoregulation rules.
 Only reliable for sets of <10 reps. Epley slightly overestimates; Brzycki is more conservative. Re-estimate every 4-8 weeks.
 
 **Reps to % 1RM:** 1 rep = 100% | 3 = 93% | 5 = 87% | 8 = 80% | 10 = 75% | 12 = 70% | 15 = 65%
+
+---
+
+## 10. Biometric Considerations
+
+**Max HR estimation:** 220 - age (Haskell/Fox formula). Approximation with standard deviation of ~10-12 bpm. User-measured max HR is always preferred.
+
+**Relative strength benchmarks** (1RM / bodyweight):
+
+| Lift | Beginner | Intermediate | Advanced |
+|------|----------|-------------|----------|
+| Squat | 0.75x | 1.25x | 1.75x |
+| Deadlift | 1.0x | 1.5x | 2.25x |
+| Bench Press | 0.5x | 1.0x | 1.5x |
+| Overhead Press | 0.35x | 0.65x | 1.0x |
+
+Approximate male standards. Female standards are typically 60-75% of these values for upper body and 80-90% for lower body. Use for context only — never as targets the user must hit.
+
+**Age and recovery:** Recovery capacity generally decreases with age. After 40, consider extending inter-session recovery for the same muscle group from 48h to 72h. After 60, prioritize movement quality and joint health over load progression.
+
+**BMI formula:** weight_kg / (height_m)^2. BMI is a population-level screening tool, not an individual body composition measure. Body fat % (from DEXA, calipers, or bioimpedance) is more informative for training decisions.
