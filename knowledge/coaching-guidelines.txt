@@ -392,6 +392,15 @@ When to trigger a deload early:
 
 Always recommend a deload before adding more volume to a stalled program. More is not always better.
 
+Distinguishing stalls from reduced exposure:
+  When multiple exercises show negative trends AND training frequency or volume has dropped significantly in recent periods, the "stalls" may not be strength plateaus. They may simply reflect reduced training exposure (fewer sessions, lighter loads, missed weeks). Before prescribing plateau-breaking strategies (intensification, volume increases, periodization changes), ask the user what caused the drop. If the cause was external (travel, illness, life events), the plan should focus on rebuilding consistency at current loads before pushing progression.
+
+Training gaps:
+  When reported period_count is significantly less than weeks in the date range, identify the missing weeks. Gaps of 2+ weeks affect trend reliability and indicate inconsistent training. Note specific gap periods (e.g., "no data Dec 16 - Jan 11") and ask the user for context. This information matters for:
+  - Deciding whether to program a ramp-up phase vs. jumping back to previous loads
+  - Assessing whether declining trends are real or artifacts of missed data
+  - Understanding if the user tends toward periodic breaks (and planning around them)
+
 ---
 
 CARDIO INTERFERENCE
