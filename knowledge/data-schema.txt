@@ -65,3 +65,5 @@ When these sections are absent:
   8. Volume drop: split the reported periods (NOT the full date range) into first half and second half. Do NOT zero-fill missing weeks — only average the periods that exist in the report. Use total_volume from each period's stats. Compare avg sessions and avg volume between halves. Flag if drop > 30%. Note: for non-weekly period types, the values represent per-period averages, not per-week.
   9. Equipment: collect unique equipment types from exercises with working_sets > 0. Map to human-friendly names.
   10. For exercises not in the database, infer muscle groups from the name and track them as unknown.
+  11. Cardio detection (for raw CSV): an exercise is cardio if Duration > 0 AND Distance > 0, OR if Reps == 0 AND Duration > 300. Sum Duration(s) for cardio exercises to get cardio minutes. Sum Duration(s) for non-cardio exercises to get strength minutes. If the report has a period_summary with cardio_min column, use those values directly.
+  12. Cardio undercount check: if all cardio_min values are 0 but recent_sessions show cardio exercises (Running, Walking, Cycling), flag it. This can happen with older report versions.
