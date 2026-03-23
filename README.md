@@ -29,6 +29,7 @@ The GPT export format stays weekly for consistent coaching. Source code for the 
 - **Structured workout plans**: Generates actionable plans with sets, reps, and weight guidance
 - **Strength trends**: Tracks progression and identifies plateaus
 - **1,000+ exercise database**: Comprehensive exercise classification with muscle groups and equipment
+- **Precomputed analysis**: Reports from fitbod-report include push:pull ratio, experience level, training gaps, volume trends, and equipment — FitbodGPT reads them instantly instead of computing from scratch
 
 ## Repository Structure
 
