@@ -19,6 +19,8 @@ def detect_format(content):
         return 'yaml'
     if content.startswith('# Workout'):
         return 'markdown'
+    if content.startswith('Date,Exercise,Reps'):
+        return 'raw_csv'
     return 'unknown'
 ```
 
@@ -524,7 +526,7 @@ def parse_fitbod_report(content):
 
 ## Unknown Exercises
 
-The exercise database covers ~209 common Fitbod exercises but is not exhaustive. The GPT report format may include an `## unknown_exercises` section listing exercises that were not found in the database:
+The exercise database covers ~1,089 Fitbod exercises but is not exhaustive. The GPT report format may include an `## unknown_exercises` section listing exercises that were not found in the database:
 
 ```
 ## unknown_exercises

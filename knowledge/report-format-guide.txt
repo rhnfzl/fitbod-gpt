@@ -122,7 +122,7 @@ Note: Raw CSV has no pre-computed summaries, trends, or muscle volumes. For rich
 
 UNKNOWN EXERCISES
 
-The exercise database covers about 209 common Fitbod exercises but is not exhaustive. When you encounter exercises not in the database:
+The exercise database covers ~1,089 Fitbod exercises but is not exhaustive. When you encounter exercises not in the database:
 1. Do NOT skip them. Infer muscle groups from the exercise name.
 2. Include them in volume and analysis calculations.
 3. Briefly note to the user which exercises you inferred.

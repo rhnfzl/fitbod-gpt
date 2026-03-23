@@ -10,3 +10,4 @@ scripts/merge_exercises.py
 scripts/normalization_maps.py
 scripts/sync_report_exercise_db.py
 scripts/verify_exercise_db.py
+audit-report.md

@@ -21,7 +21,7 @@
 
 Upload these 4 files from the `knowledge/` directory. Use `.txt` versions (not `.md`) for better RAG retrieval in ChatGPT:
 
-1. **exercise-database.json** (~35KB) - 209 Fitbod exercises with muscle groups, equipment, movement patterns
+1. **exercise-database.json** (~500KB) - ~1,089 Fitbod exercises with muscle groups, equipment, movement patterns
 2. **training-principles.txt** (~4KB) - Volume landmarks, progressive overload, splits, recovery science
 3. **report-format-guide.txt** (~5KB) - Format descriptions for all 5 input types (TSV/JSON/YAML/Markdown/raw CSV)
 4. **coaching-guidelines.txt** (~10KB) - User level detection, injury handling, recovery data interpretation, volume targets, split recommendations, deload protocols
@@ -59,7 +59,7 @@ None - Fitbod has no public API. FitbodGPT is read-only (analyze data → recomm
 2. Click **Create**
 3. Open the configuration view for the GPT draft
 4. Paste contents of `instructions.md` into the Instructions field
-5. Upload the 3 knowledge files
+5. Upload the 4 knowledge files
 6. Add the 4 conversation starters
 7. Set the recommended model to the best reasoning model your workspace offers
 8. Enable Code Interpreter & Data Analysis and leave the other capabilities off unless you have a deliberate reason to expand scope

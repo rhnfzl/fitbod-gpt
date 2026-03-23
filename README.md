@@ -22,13 +22,13 @@ The GPT export format stays weekly for consistent coaching. Source code for the 
 
 ## Features
 
-- **Multi-format input**: Accepts GPT, JSON, YAML, and Markdown reports
+- **Multi-format input**: Accepts GPT (TSV), JSON, YAML, Markdown reports, and raw Fitbod CSV exports
 - **Adaptive coaching**: Detects your experience level (beginner/intermediate/advanced) from your data
 - **Imbalance detection**: Identifies muscle group imbalances and suggests corrections
 - **Smart equipment inference**: Determines your available equipment from exercise history
 - **Structured workout plans**: Generates actionable plans with sets, reps, and weight guidance
 - **Strength trends**: Tracks progression and identifies plateaus
-- **209 exercise database**: Comprehensive exercise classification with muscle groups and equipment
+- **1,000+ exercise database**: Comprehensive exercise classification with muscle groups and equipment
 
 ## Repository Structure
 
@@ -40,9 +40,10 @@ fitbod-gpt/
 │   ├── conversation-starters.md    # Conversation starter definitions
 │   └── configuration.md            # GPT builder setup guide
 ├── knowledge/
-│   ├── exercise-database.json      # Exercise classifications
-│   ├── training-principles.md      # Training science reference
-│   └── report-format-guide.md      # Report parsing guide
+│   ├── exercise-database.json      # ~1,089 exercise classifications
+│   ├── coaching-guidelines.txt     # Coaching knowledge base
+│   ├── training-principles.txt     # Training science reference
+│   └── report-format-guide.txt     # Report parsing guide
 └── scripts/
     └── generate_exercise_db.py     # Exercise DB generator
 ```
@@ -61,7 +62,7 @@ See [gpt/configuration.md](gpt/configuration.md) for step-by-step setup instruct
 
 ## Contributing Exercises
 
-The exercise database covers 209 common Fitbod exercises but is not exhaustive. If you encounter exercises not in the database:
+The exercise database covers ~1,089 Fitbod exercises but is not exhaustive. If you encounter exercises not in the database:
 
 1. Run `python scripts/generate_exercise_db.py` to regenerate the base DB
 2. Add new exercises to `knowledge/exercise-database.json`
