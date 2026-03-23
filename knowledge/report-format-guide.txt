@@ -50,7 +50,9 @@ Sections:
 - muscle_volume: One row per muscle group. Columns: muscle, weekly_avg_sets, trend
 - recent_sessions: One row per recent workout date. Compact exercise notation: Name:SetsxReps@Weight (e.g., "Barbell Bench Press:3x8@50.0kg")
 
-Optional section:
+Optional sections (present when precomputed analysis is enabled):
+- gpt_analysis: TSV with metric/value pairs. Contains push:pull ratio, level score, stalled exercises, gap weeks, volume drop, etc. See data-schema.txt for field definitions.
+- equipment: One equipment name per line (no header). Human-friendly names sorted by usage.
 - unknown_exercises: One exercise name per line. These were not in the exercise database and need muscle group inference.
 
 ---
