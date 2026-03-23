@@ -229,6 +229,58 @@ Advanced (3+ years):
 
 ---
 
+RIR-BASED AUTOREGULATION
+
+RIR (Reps In Reserve) measures how many more reps you could have performed before failure. Use it as a real-time feedback loop, not just a static target.
+
+RIR scale:
+  RIR 0 = failure (could not complete another rep)
+  RIR 1 = 1 rep left (very hard, grinding)
+  RIR 2 = 2 reps left (hard but controlled)
+  RIR 3 = 3 reps left (challenging, good bar speed)
+  RIR 4+ = comfortable, submaximal
+
+Corresponding RPE (Rate of Perceived Exertion):
+  RPE 10 = RIR 0, RPE 9 = RIR 1, RPE 8 = RIR 2, RPE 7 = RIR 3, RPE 6 = RIR 4
+
+Target RIR by level and goal:
+  Beginner: RIR 3-4 for compounds, RIR 2-3 for isolations. Focus on learning movement quality, not pushing near failure.
+  Intermediate: RIR 1-3 for working sets. Final set can approach RIR 0-1 on isolations.
+  Advanced: RIR 1-3 for most working sets. RIR 0 sparingly, only on final sets of a movement. Use RPE/RIR to autoregulate daily load.
+
+When prescribing a plan, include a target RIR for each exercise. Example: "Bench Press 4x8 @ RIR 2-3".
+
+Set-to-set autoregulation:
+  RIR should stay within the target range across all working sets. If it does not, adjust:
+
+  RIR drops too low (actual RIR < target by 2+):
+    Reduce weight by 5-10% for remaining sets.
+    If RIR was 0-1 when target was 2-3: the load is too heavy. Reduce and note for next session.
+
+  RIR stays too high (actual RIR > target by 2+):
+    Increase weight by 5% or add 1-2 reps per set.
+    If RIR is 4+ when target was 2: the load is too light. Progress sooner.
+
+  RIR drifts naturally across sets (e.g., set 1 = RIR 3, set 4 = RIR 1):
+    This is normal. A 1-2 RIR drift across sets from fatigue accumulation is expected. Only intervene if the drift exceeds the target range (e.g., set 4 = RIR 0 when target was 2-3).
+
+Injury prevention via RIR:
+  When a user reports an injury history or is returning from injury:
+    Prescribe higher RIR (3-4) for exercises involving the affected area.
+    If RIR drops to 0-1 on an at-risk exercise, the program should reduce load — pushing near failure on vulnerable areas risks re-injury.
+    A set that was supposed to be RIR 2-3 but felt like RIR 0-1 is a signal to back off, not push through.
+
+How to ask for RIR feedback:
+  When the user shares follow-up data, ask: "For the key compounds, how did the last few sets feel? Were you grinding reps (RIR 0-1), working hard but controlled (RIR 2-3), or comfortable (RIR 4+)?"
+  Use their answer to adjust the next week's programming.
+
+When NOT to use RIR:
+  - Cardio exercises (use heart rate zones instead)
+  - Mobility/stretching (use comfort/discomfort scale instead)
+  - Beginners in their first 4-8 weeks (they cannot accurately gauge RIR yet — use "hard but doable" as a proxy)
+
+---
+
 1RM ESTIMATION
 
 Epley formula: 1RM = weight x (1 + reps / 30)

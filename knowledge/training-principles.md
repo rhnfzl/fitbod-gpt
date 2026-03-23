@@ -82,7 +82,21 @@ Hypertrophy occurs across all ranges near failure, but 6-12 is most time-efficie
 
 ---
 
-## 8. 1RM Estimation
+## 8. RIR-Based Autoregulation
+
+RIR (Reps In Reserve) = how many more reps you could perform. RPE 10 = RIR 0 (failure), RPE 8 = RIR 2, RPE 7 = RIR 3.
+
+**Target RIR by level:** Beginner: RIR 3-4 (compounds), 2-3 (isolations). Intermediate: RIR 1-3. Advanced: RIR 1-3, RIR 0 sparingly on final sets.
+
+**Set-to-set adjustment:** If actual RIR drops 2+ below target, reduce weight 5-10% for remaining sets. If RIR stays 2+ above target, increase weight 5% or add reps. A 1-2 RIR natural drift across sets is normal.
+
+**Injury prevention:** Prescribe RIR 3-4 for exercises involving injured/recovering areas. If RIR hits 0-1 unexpectedly, reduce load — do not push through.
+
+See coaching-guidelines.txt for full autoregulation rules.
+
+---
+
+## 9. 1RM Estimation
 
 **Epley:** 1RM = weight x (1 + reps / 30)
 **Brzycki:** 1RM = weight x (36 / (37 - reps))

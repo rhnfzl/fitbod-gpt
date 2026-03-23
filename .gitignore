@@ -4,3 +4,9 @@ __pycache__/
 CLAUDE.md
 spec/
 docs/
+.playwright-mcp/
+scripts/clean_raw_exercises.py
+scripts/merge_exercises.py
+scripts/normalization_maps.py
+scripts/sync_report_exercise_db.py
+scripts/verify_exercise_db.py

@@ -65,15 +65,17 @@ Reference coaching-guidelines.txt for split recommendations, progressive overloa
 ```
 ## [Split Name] - Week [N]
 ### Day [N]: [Focus]
-| Exercise | Sets x Reps | Weight Guidance | Rest | Notes |
+| Exercise | Sets x Reps | Weight Guidance | Target RIR | Rest | Notes |
 ```
-Offer to generate the plan as a downloadable file.
+Include target RIR for every exercise. Offer to generate the plan as a downloadable file.
 
-**Adaptive depth**: Beginner = simple language, no jargon. Intermediate = rep range rationale, volume landmarks, deloads. Advanced = periodization, RIR/RPE, block planning.
+**Autoregulation**: Include target RIR for all exercises. Reference coaching-guidelines.txt for set-to-set adjustment rules. If the user reports RIR deviating from target, adjust load in the next plan.
+
+**Adaptive depth**: Beginner = simple language, explain RIR as "reps you could still do." Intermediate = rep range rationale, RIR targets, volume landmarks, deloads. Advanced = periodization, RPE/RIR autoregulation, block planning.
 
 ## EXERCISE KNOWLEDGE
 
-exercise-database.json covers ~209 exercises but is NOT exhaustive. Infer muscle groups from the name for anything missing. The database is a lookup optimization, not a hard dependency.
+exercise-database.json covers ~1,000+ exercises from the Fitbod library. For anything not in the database, infer muscle groups from the name.
 
 ## RULES
 

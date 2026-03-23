@@ -13,6 +13,7 @@ Usage:
 import json
 import os
 import re
+import sys
 from datetime import date
 from typing import Any
 
@@ -804,9 +805,12 @@ def build_exercise(fitbod_name: str, hevy_name: str) -> dict[str, Any]:
     bw = is_bodyweight(fitbod_name, equipment)
     uni = is_unilateral(fitbod_name)
 
+    # Only include alternative names that differ from the Fitbod name
+    alt_names = [hevy_name] if hevy_name != fitbod_name else []
+
     return {
         "fitbod_name": fitbod_name,
-        "hevy_name": hevy_name,
+        "alternative_names": alt_names,
         "equipment": equipment,
         "primary_muscles": primary,
         "secondary_muscles": secondary,
@@ -839,12 +843,23 @@ ALL_MOVEMENT_PATTERNS: list[str] = sorted({
     "hip_hinge", "squat", "lunge",
     "isolation_push", "isolation_pull",
     "core", "locomotion", "carry", "mobility", "other",
+    # Added in v2.0 (used by merged database)
+    "plyometric", "olympic_lift",
 })
 
 ALL_EQUIPMENT_TYPES: list[str] = sorted({
     "barbell", "dumbbell", "cable", "machine", "kettlebell",
     "smith_machine", "ez_bar", "bodyweight", "medicine_ball",
     "stability_ball", "sled", "plate", "other",
+    # Added in v2.0 (used by merged database)
+    "trx", "resistance_band", "foam_roller", "bosu", "pull_up_bar",
+    "trap_bar", "box", "battle_ropes", "rings",
+})
+
+ALL_CATEGORIES: list[str] = sorted({
+    "strength", "cardio", "mobility",
+    # Added in v2.0
+    "plyometric",
 })
 
 
@@ -853,18 +868,32 @@ ALL_EQUIPMENT_TYPES: list[str] = sorted({
 # ---------------------------------------------------------------------------
 
 def main() -> None:
+    """Generate exercise-database.json from the 209-exercise EXERCISE_MAPPING.
+
+    NOTE: This script only generates the original 209 core exercises. The full
+    exercise-database.json (v2.0, ~1,089 exercises) was produced by a one-time
+    merge process that combined these 209 exercises with ~880 additional exercises
+    from the Fitbod website. Do NOT run this script without understanding that it
+    will overwrite the merged database with only the 209 core exercises.
+    """
+    if "--force" not in sys.argv[1:]:
+        print("WARNING: exercise-database.json now contains ~1,089 exercises (v2.0).")
+        print("Running this script will overwrite it with only 209 core exercises.")
+        print("Use --force if you intentionally want to regenerate the 209-exercise subset.")
+        sys.exit(1)
+
     exercises = []
     for fitbod_name, hevy_name in sorted(EXERCISE_MAPPING.items()):
         exercises.append(build_exercise(fitbod_name, hevy_name))
 
     db = {
-        "version": "1.0",
+        "version": "1.1",
         "generated": str(date.today()),
-        "source": f"Fitbod2HevyConverter EXERCISE_MAPPING ({len(EXERCISE_MAPPING)} exercises)",
         "exercises": exercises,
         "muscle_groups": ALL_MUSCLE_GROUPS,
         "movement_patterns": ALL_MOVEMENT_PATTERNS,
         "equipment_types": ALL_EQUIPMENT_TYPES,
+        "categories": ALL_CATEGORIES,
     }
 
     output_path = os.path.join(os.path.dirname(__file__), "..", "knowledge", "exercise-database.json")
