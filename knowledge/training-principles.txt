@@ -115,4 +115,4 @@ Relative strength benchmarks (1RM / bodyweight):
 
 Age and recovery: Recovery capacity generally decreases with age. After 40, consider extending inter-session recovery for the same muscle group from 48h to 72h. After 60, prioritize movement quality and joint health over load progression.
 
-BMI formula: weight_kg / (height_m)^2. BMI is a population-level screening tool, not individual body composition measure. Body fat % (from DEXA, calipers, or bioimpedance) is more informative.
+BMI formula: weight_kg / (height_m)^2. BMI is a population-level screening tool, not an individual body composition measure. Body fat % (from DEXA, calipers, or bioimpedance) is more informative for training decisions.

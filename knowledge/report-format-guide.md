@@ -490,6 +490,78 @@ def parse_markdown_format(content):
 
 ---
 
+## 5. Raw Fitbod CSV
+
+Direct export from the Fitbod app. Starts with `Date,Exercise,Reps`. One row per set with 11 columns:
+
+| Column | Description |
+|--------|------------|
+| `Date` | Timestamp with timezone offset (e.g., `2026-03-04 07:20:06 +0000`) |
+| `Exercise` | Exercise name (e.g., `Barbell Bench Press`, `Running`) |
+| `Reps` | Number of repetitions. `0` for cardio/timed exercises. |
+| `Weight(kg)` | Weight in kilograms. `0.0` for bodyweight/cardio. |
+| `Duration(s)` | Duration in seconds. `0.0` for strength exercises. |
+| `Distance(m)` | Distance in meters. `0.0` for non-cardio. |
+| `Incline` | Incline setting. Usually `0.0`. |
+| `Resistance` | Resistance setting. Usually `0.0`. |
+| `isWarmup` | `true` or `false`. Exclude warmup sets from all analysis. |
+| `Note` | User notes. Usually empty. |
+| `multiplier` | Weight multiplier for per-arm/per-leg exercises (e.g., `1.0` for barbell, `2.0` for dumbbells if each arm counted separately). Multiply weight by this value. |
+
+### Cardio Detection
+
+- `Duration > 0` AND `Distance > 0` → cardio (running, cycling, etc.)
+- `Reps == 0` AND `Duration > 300` → also cardio (elliptical, rowing, etc.)
+- Everything else with `reps > 0` or `weight > 0` → strength
+
+### Processing
+
+```python
+import csv
+from datetime import datetime
+
+
+def parse_raw_csv(content):
+    """Parse raw Fitbod CSV export into structured session data."""
+    reader = csv.DictReader(content.strip().splitlines())
+    sessions = {}
+
+    for row in reader:
+        date = row['Date'][:10]  # Extract date portion
+        if date not in sessions:
+            sessions[date] = []
+
+        is_warmup = row.get('isWarmup', 'false').lower() == 'true'
+        weight = float(row.get('Weight(kg)', 0))
+        multiplier = float(row.get('multiplier', 1))
+        effective_weight = weight * multiplier
+        reps = int(row.get('Reps', 0))
+        duration = float(row.get('Duration(s)', 0))
+        distance = float(row.get('Distance(m)', 0))
+
+        # Cardio detection
+        is_cardio = (duration > 0 and distance > 0) or (reps == 0 and duration > 300)
+
+        sessions[date].append({
+            'exercise': row['Exercise'],
+            'reps': reps,
+            'weight': effective_weight,
+            'duration': duration,
+            'distance': distance,
+            'is_warmup': is_warmup,
+            'is_cardio': is_cardio,
+            'note': row.get('Note', ''),
+        })
+
+    return sessions
+```
+
+### Notes
+
+Raw CSV has no pre-computed summaries, trends, or muscle volumes. All metrics must be computed from individual set rows. For richer analysis with pre-computed metrics, recommend the user generate a report at [fitbod-report.streamlit.app](https://fitbod-report.streamlit.app/).
+
+---
+
 ## Unified Parsing Entrypoint
 
 Combine detection and parsing into a single function:
@@ -517,6 +589,9 @@ def parse_fitbod_report(content):
 
     elif fmt == 'markdown':
         return {'format': 'markdown', 'data': parse_markdown_format(content)}
+
+    elif fmt == 'raw_csv':
+        return {'format': 'raw_csv', 'data': parse_raw_csv(content)}
 
     else:
         raise ValueError(f"Unknown report format. Content starts with: {content[:50]!r}")
@@ -549,7 +624,7 @@ When you encounter unknown exercises:
 Some Fitbod data has all exercises within a session sharing identical timestamps. In these cases, workout duration is estimated by the report generator rather than measured precisely.
 
 ### Weight Multiplier
-The weight multiplier (for exercises like Dumbbell Curl where each arm holds a dumbbell) is already applied during report generation. Do **not** multiply weights again.
+The weight multiplier (for exercises like Dumbbell Curl where each arm holds a dumbbell) is already applied during report generation. Do **not** multiply weights again. For raw CSV: you must apply the multiplier yourself (`effective_weight = Weight(kg) * multiplier`).
 
 ### Empty or Missing Fields
 - Treat missing numeric fields as `0`.
